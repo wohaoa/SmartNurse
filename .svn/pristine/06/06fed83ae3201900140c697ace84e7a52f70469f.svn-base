@@ -1,0 +1,154 @@
+package com.magicare.smartnurse.adapter;
+
+import java.util.List;
+
+import android.content.Context;
+import android.graphics.Bitmap;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.AbsListView;
+import android.widget.AbsListView.OnScrollListener;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.ListView;
+import android.widget.TextView;
+
+import com.alibaba.fastjson.JSON;
+import com.magicare.smartnurse.R;
+import com.magicare.smartnurse.bean.ConcernBean;
+import com.magicare.smartnurse.bean.ImgBean;
+import com.magicare.smartnurse.logic.BitmapManager;
+import com.magicare.smartnurse.utils.AsyncImageLoader;
+import com.magicare.smartnurse.utils.FileUtils;
+import com.magicare.smartnurse.utils.LogUtil;
+
+public class ConcernHistoryAdapter extends MagicareBaseAdapter<ConcernBean> implements OnScrollListener{
+
+	/**
+	 * GridView的实例
+	 */
+	private ListView mPhotoWall;
+	
+	/**
+	 * 第一张可见图片的下标
+	 */
+	private int mFirstVisibleItem;
+
+	/**
+	 * 一屏有多少张图片可见
+	 */
+	private int mVisibleItemCount;
+	/**
+	 * 记录是否刚打开程序，用于解决进入程序不滚动屏幕，不会下载图片的问题。
+	 */
+	private boolean isFirstEnter = true;
+	
+	private AsyncImageLoader imageLoader;
+	private String url;
+	
+	Bitmap cacheBitmap;
+	
+	private ViewHolder holder = null;
+	
+	private BitmapManager bmpManager;
+	
+	public ConcernHistoryAdapter(Context mContext, List<ConcernBean> mList, ListView photoWall) {
+		super(mContext, mList);
+		mPhotoWall = photoWall;
+		this.bmpManager = new BitmapManager(mContext, photoWall, mList);
+		this.imageLoader = new AsyncImageLoader(mContext, photoWall, mList);
+		mPhotoWall.setOnScrollListener(this);
+	}
+	
+	// 更新数据
+	public void updateData(List<ConcernBean> list, String updateNumber){
+		bmpManager.updateData(list, updateNumber);
+		mList = list;
+		notifyDataSetChanged();
+	}
+
+	@Override
+	protected View makeView(int position, View convertView, ViewGroup parent) {
+
+		if (convertView == null) {
+			convertView = mInflater.inflate(R.layout.concern_detail_item, null);
+			holder = new ViewHolder();
+			holder.tv_child_concern = (TextView) convertView.findViewById(R.id.tv_child_concern);
+			holder.tv_reply = (TextView) convertView.findViewById(R.id.tv_reply);
+			holder.iv_reply = (ImageView) convertView.findViewById(R.id.iv_reply);
+			holder.lv1_reply = (LinearLayout) convertView.findViewById(R.id.lv1_reply);
+			holder.lv2_reply = (LinearLayout) convertView.findViewById(R.id.lv2_reply);
+			convertView.setTag(holder);
+		} else {
+			holder = (ViewHolder) convertView.getTag();
+		}
+
+		final ConcernBean bean = mList.get(position);
+
+		holder.tv_child_concern.setText(bean.getContent());
+		
+		
+//		List<ImgBean> imglist = JSON.parseArray(bean.getReply_images(), ImgBean.class);
+//		url = imglist.get(0).getImg_url();
+
+		url = FileUtils.getMapForJson(bean.getReply_images());
+		
+		if (url != null) {
+//			cacheBitmap = bmpManager.getBitmapFromMemoryCache(url);
+			cacheBitmap = imageLoader.loadImage(holder.iv_reply, url, bean.getExhort_id());
+		}else{
+			cacheBitmap = null;
+		}
+		
+		// 给ImageView设置一个Tag，保证异步加载图片时不会乱序
+		holder.iv_reply.setTag(bean.getExhort_id());
+		
+		if (bean.getStatus() == 0) { // 未回复
+			holder.lv1_reply.setVisibility(View.GONE);
+			holder.lv2_reply.setVisibility(View.GONE);
+		} else { // 已回复
+			if (bean.getReply_content() != null && !bean.getReply_content().equals("")) { // 回复文字
+				holder.tv_reply.setText(bean.getReply_content());
+				holder.lv1_reply.setVisibility(View.VISIBLE);
+				holder.lv2_reply.setVisibility(View.GONE);
+			} else { // 回复图片
+				if (cacheBitmap != null) {
+					holder.iv_reply.setImageBitmap(cacheBitmap);
+				} else {
+//					holder.iv_reply.setImageResource(R.drawable.icon_zhyl);
+				}
+				holder.lv2_reply.setVisibility(View.VISIBLE);
+				holder.lv1_reply.setVisibility(View.GONE);
+			}
+		}
+		return convertView;
+	}
+
+	private static class ViewHolder {
+		public TextView tv_child_concern;
+		public TextView tv_reply;
+		public ImageView iv_reply;
+		public LinearLayout lv1_reply, lv2_reply;
+	}
+
+	@Override
+	public void onScrollStateChanged(AbsListView view, int scrollState) {
+//		bmpManager.loadBitmaps(mFirstVisibleItem, mVisibleItemCount);
+		imageLoader.loadImage(mFirstVisibleItem,mVisibleItemCount);
+	}
+
+	@Override
+	public void onScroll(AbsListView view, int firstVisibleItem, int visibleItemCount, int totalItemCount) {
+		mFirstVisibleItem = firstVisibleItem;
+		mVisibleItemCount = visibleItemCount;
+		// 下载的任务应该由onScrollStateChanged里调用，但首次进入程序时onScrollStateChanged并不会调用，
+		// 因此在这里为首次进入程序开启下载任务。
+		if (isFirstEnter && visibleItemCount > 0) {
+//			bmpManager.loadBitmaps(firstVisibleItem, visibleItemCount+5);
+			imageLoader.loadImage(firstVisibleItem,visibleItemCount);
+			isFirstEnter = false;
+		}
+		
+	}
+
+}

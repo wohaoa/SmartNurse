@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res/com.magicare.smartnurse"
+    android:id="@+id/fl_collect"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f8f9f6"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="82dp"
+            android:layout_marginLeft="48dp"
+            android:layout_marginTop="24dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <com.magicare.smartnurse.view.CircleImageView
+                xmlns:myxmlns="http://schemas.android.com/apk/res/com.magicare.smartnurse"
+                android:id="@+id/civ_photo"
+                android:layout_width="82dp"
+                android:layout_height="82dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_defaultface"
+                myxmlns:border_color="#ffffff"
+                myxmlns:border_width="0dp"
+                myxmlns:inner_color="#ffffff"
+                myxmlns:out_color="@color/photo_out_color" />
+
+            <TextView
+                android:id="@+id/tv_name"
+                style="@style/collect_user_txt_style"
+                android:layout_marginLeft="26dp" />
+
+            <TextView
+                android:id="@+id/tv_old_sn"
+                style="@style/collect_user_txt_style" />
+
+            <TextView
+                android:id="@+id/tv_age"
+                style="@style/collect_user_txt_style" />
+
+            <TextView
+                android:id="@+id/tv_gender"
+                style="@style/collect_user_txt_style" />
+
+            <TextView
+                android:id="@+id/tv_location"
+                style="@style/collect_user_txt_style" />
+
+            <TextView
+                android:id="@+id/tv_more"
+                style="@style/collect_user_txt_style"
+                android:layout_marginLeft="80dp"
+                android:text="更多"
+                android:textColor="#65BA21" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.3"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingLeft="50dp" >
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <ImageView
+                        android:id="@+id/iv_totalprocess"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@anim/collect_process" />
+
+                    <ImageView
+                        android:id="@+id/iv_startcollect"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@drawable/collect_btn_start_selector"
+                        android:clickable="true" />
+
+                    <TextView
+                        android:id="@+id/tv_start_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="开始"
+                        android:textColor="#65BA21"
+                        android:textSize="48dp"
+                        android:textStyle="bold" />
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/tv_current_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:text="设备正在连接..."
+                    android:textColor="#666666"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="182dp"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingRight="20dp" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_weight" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_weight="1"
+                        android:text="体重"
+                        android:textColor="#333333"
+                        android:textSize="28dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_weight"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:gravity="right"
+                        android:text="0KG"
+                        android:textColor="#333333"
+                        android:textSize="28dp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/iv_weight_default"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="40dp"
+                        android:src="@drawable/ic_original" />
+
+                    <ImageView
+                        android:id="@+id/iv_weight_loading"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="40dp"
+                        android:background="@anim/loading_process"
+                        android:visibility="gone" />
+
+                    <Button
+                        android:id="@+id/btn_weight"
+                        android:layout_width="112dp"
+                        android:layout_height="42dp"
+                        android:background="@drawable/collect_btn_retest_selector"
+                        android:text="采集"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        android:visibility="invisible" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_blood_pressure" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_weight="1"
+                        android:text="血压"
+                        android:textColor="#333333"
+                        android:textSize="28dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_bloodpressure"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:gravity="right"
+                        android:text="0mmHg"
+                        android:textColor="#333333"
+                        android:textSize="28dp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/iv_bloodpressure_default"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="40dp"
+                        android:src="@drawable/ic_original" />
+
+                    <ImageView
+                        android:id="@+id/iv_bloodpressure_loading"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="40dp"
+                        android:background="@anim/loading_process"
+                        android:visibility="gone" />
+
+                    <Button
+                        android:id="@+id/btn_bloodpressure"
+                        android:layout_width="112dp"
+                        android:layout_height="42dp"
+                        android:background="@drawable/collect_btn_retest_selector"
+                        android:text="采集"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        android:visibility="invisible" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_heart_rate" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_weight="1"
+                        android:text="心率"
+                        android:textColor="#333333"
+                        android:textSize="28dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_heart_rate"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:gravity="right"
+                        android:text="0BPM"
+                        android:textColor="#333333"
+                        android:textSize="28dp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/iv_heart_default"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="40dp"
+                        android:src="@drawable/ic_original" />
+
+                    <ImageView
+                        android:id="@+id/iv_heart_loading"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="40dp"
+                        android:background="@anim/loading_process"
+                        android:visibility="gone" />
+
+                    <Button
+                        android:id="@+id/btn_heart_rate"
+                        android:layout_width="112dp"
+                        android:layout_height="42dp"
+                        android:background="@drawable/collect_btn_retest_selector"
+                        android:text="采集"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        android:visibility="invisible" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_blood_sugar" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_weight="1"
+                        android:text="血糖"
+                        android:textColor="#333333"
+                        android:textSize="28dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_bloodsugar"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:gravity="right"
+                        android:text="0Mmol/L"
+                        android:textColor="#333333"
+                        android:textSize="28dp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/iv_bloodsugar_default"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="40dp"
+                        android:src="@drawable/ic_original" />
+
+                    <ImageView
+                        android:id="@+id/iv_bloodsugar_loading"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="40dp"
+                        android:background="@anim/loading_process"
+                        android:visibility="gone" />
+
+                    <Button
+                        android:id="@+id/btn_bloodsugar"
+                        android:layout_width="112dp"
+                        android:layout_height="42dp"
+                        android:background="@drawable/collect_btn_retest_selector"
+                        android:text="采集"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        android:visibility="invisible" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_mask"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#78051101"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,122 @@
+<resources>
+
+    <!--
+         Example customization of dimensions originally defined in res/values/dimens.xml
+         (such as screen margins) for screens with more than 820dp of available width. This
+         would include 7" and 10" devices in landscape (~960dp and ~1280dp respectively).
+
+		平板电脑
+    -->
+
+    <dimen name="activity_horizontal_margin">64dp</dimen>
+    <!-- activity_userdetail.xml -->
+    <dimen name="userdetail_view">610dp</dimen>
+    <dimen name="userdetail_imageview">160dp</dimen>
+    <dimen name="userdetail_linelayout">84dp</dimen>
+    <dimen name="userdetail_relayout">155dp</dimen>
+    <dimen name="userdetail_relayout_top">48dp</dimen>
+    <dimen name="userdetail_framelayout_padding">24dp</dimen>
+    <dimen name="userdetail_framelayout_top">20dp</dimen>
+    <dimen name="userdetail_line_old_marginLeft">80dp</dimen>
+    <dimen name="userdetail_line_old_margintop">100dp</dimen>
+    <dimen name="userdetail_line_margintop">70dp</dimen>
+    <dimen name="userdetail_line_linelayout_margintop">60dp</dimen>
+    <dimen name="userdetail_linelayout_top">20dp</dimen>
+    <dimen name="userdetail_scrollview_linelayout">70dp</dimen>
+    <dimen name="userdetail_tv_oldname_marginLeft">47dp</dimen>
+    <dimen name="userdetail_tv_oldaccounts_marginLeft">35dp</dimen>
+    <dimen name="userdetail_tv_oldage_marginLeft">30dp</dimen>
+    <dimen name="userdetail_tv_oldsex_marginLeft">30dp</dimen>
+    <dimen name="userdetail_tv_oldadress_marginLeft">30dp</dimen>
+    <dimen name="userdetail_tv_oldmore_marginLeft">70dp</dimen>
+    <dimen name="userdetail_button_health_marginLeft">1dp</dimen>
+    <dimen name="userdetail_button_sports_marginLeft">70dp</dimen>
+    <dimen name="userdetail_relayout_width">700dp</dimen>
+    <dimen name="userdetail_tv_loccationadress_width">180dp</dimen>
+    <dimen name="userdetail_tv_loccationadress_marginLeft">10dp</dimen>
+    <dimen name="userdetail_tv_status_width">50dp</dimen>
+    <dimen name="userdetail_tv_status_marginLeft">30dp</dimen>
+    <dimen name="userdetail_tv_timelabl_width">105dp</dimen>
+    <dimen name="userdetail_tv_timelabl_marginLeft">20dp</dimen>
+    <dimen name="userdetail_tv_time_width">250dp</dimen>
+    <dimen name="userdetail_tv_name_marginTop">20dp</dimen>
+    <dimen name="userdetail_textview_small_size">18dp</dimen>
+    <dimen name="userdetail_textview_middle_size">20dp</dimen>
+    <dimen name="userdetail_textview_big_size">24dp</dimen>
+    <dimen name="userdetail_button_health_width">70dp</dimen>
+    <dimen name="userdetail_button_sports_width">100dp</dimen>
+    <dimen name="userdetail_button_healthandsport_height">48dp</dimen>
+    <dimen name="userdetail_startAxnimMovex">-25px</dimen>
+    <dimen name="userdetail_startAxnimMovey">50px</dimen>
+    <dimen name="userdetail_startRelayout">37px</dimen>
+    <dimen name="userdetail_srcollview_height">470dp</dimen>
+    <dimen name="userdetail_tv_agelab_marginleft">350dp</dimen>
+    <dimen name="userdetail_tv_birthdaylab">350dp</dimen>
+    <dimen name="userdetail_RelativeLayout_layout_marginLeft">17dp</dimen>
+    <dimen name="userdetail_tv_braceletlab_marginleft">370dp</dimen>
+    <dimen name="userdetail_tv_bed_marginleft">350dp</dimen>
+    <dimen name="userdetail_tv_childphonelab_marginleft">350dp</dimen>
+
+    <!--
+	 CollectRecordFragment item
+	 WarinFragment item
+    -->
+    <dimen name="item_LinearLayout_height">62dp</dimen>
+    <dimen name="item_textview">18dp</dimen>
+    <dimen name="item_LinearLayout_titleheight">45dp</dimen>
+
+    <!-- OldUserHealthInfoFragment1 -->
+    <dimen name="health_LineChartView_height">400dp</dimen>
+    <dimen name="line_block_height">40dp</dimen>
+    <!-- OldUserSleepInfoFragment1 -->
+
+    <dimen name="sleep_LineChartView_width">848dp</dimen>
+    <dimen name="sleep_LineChartView_height">350dp</dimen>
+    <dimen name="activity_userdetail_view">610dp</dimen>
+    <dimen name="activity_userdetail_imageview">160dp</dimen>
+    <dimen name="activity_userdetail_linelayout">84dp</dimen>
+    <dimen name="activity_userdetail_relayout">155dp</dimen>
+    <dimen name="activity_userdetasil_relayout_top">48dp</dimen>
+
+    <!-- fragment_monitor.xml -->
+
+    <dimen name="monitor_dynamic_title_height">63dp</dimen>
+    <dimen name="monitor_text_size">24dp</dimen>
+    <dimen name="monitor_fullscreen_width">63dp</dimen>
+    <dimen name="monitor_fullscreen_height">63dp</dimen>
+    <dimen name="adapter_dealwith_item_height">90dp</dimen>
+    <dimen name="adapter_dealwith_item_margintop">10dp</dimen>
+    <dimen name="adapter_dealwith_item_paddingright">50dp</dimen>
+    <dimen name="adapter_dealwith_layout_warn_type_width">256dp</dimen>
+    <dimen name="adapter_dealwith_text_size">24dp</dimen>
+    <dimen name="adapter_dealwith_civ_photo_widthorheight">40dp</dimen>
+    <dimen name="adapter_dealwith_civ_photo_marginleft">69dp</dimen>
+    <dimen name="adapter_dealwith_btn_feedback_width">91dp</dimen>
+    <dimen name="adapter_dealwith_btn_feedback_height">53dp</dimen>
+    <dimen name="adapter_dynamic_civ_photo_widthorheight">80dp</dimen>
+    <!--<dimen name="dailog_feedback_title_textsize">28dp</dimen>
+    <dimen name="dailog_feedback_rg_margintop">22dp</dimen>
+    <dimen name="dailog_feedback_layout_button_margintop">34dp</dimen>
+    <dimen name="dailog_feedback_layout_button_marginbottom">5dp</dimen>
+    <dimen name="dailog_feedback_button_textsize">24dp</dimen>-->
+    <!-- 整体控件与左、右、上、下边界的间距 -->
+    <dimen name="dialog_feedback_bound_leftmargin">40dp</dimen>
+    <dimen name="dialog_feedback_bound_rightmargin">40dp</dimen>
+    <dimen name="dialog_feedback_bound_topmargin">40dp</dimen>
+    <dimen name="dialog_feedback_bound_bottommargin">40dp</dimen>
+    <!-- 不同种类控件上下的间距 -->
+    <dimen name="dialog_feedback_widget_topmargin">10dp</dimen>
+    <dimen name="dialog_feedback_widget_bottommargin">10dp</dimen>
+    <!-- 确认、取消两个按钮的高度 -->
+    <dimen name="dialog_feedback_button_height">60dp</dimen>
+    <!-- 处理结果 这几个字的字体大小 -->
+	<dimen name="dialog_feedback_title_textsize">20dp</dimen>
+	<!-- 信息方块之间的上下的间距与左右的间距 -->
+	<dimen name="dialog_feedback_message_margin">10dp</dimen>
+	<!-- 信息方块里面的字体大小，包括确认、取消按钮的字体大小 -->
+	<dimen name="dialog_feedback_message_textsize">14dp</dimen>
+	
+	
+	<!-- 判断当前是平板还是TV 1表示tv，0表示平板-->
+	<dimen name="tv_or_pingban">0px</dimen>
+</resources>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:orientation="horizontal" 
+    android:background="@android:color/white"
+    >
+
+    <TextView
+        android:id="@+id/tv_data"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:layout_weight="1.6"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="数据"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/tv_collecttime"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:layout_weight="1.2"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="时间"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/tv_oldid"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:layout_weight="0.7"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="老人ID"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/tv_stauts"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:layout_weight="0.5"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="状态"
+        android:textSize="18dp" />
+
+</LinearLayout>

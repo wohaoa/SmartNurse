@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.magicare.smartnurse.view.ScaleGridView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/collection_gridview"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:animationCache="true"
+    android:cacheColorHint="@android:color/transparent"
+    android:divider="@null"
+    android:gravity="center"
+    android:horizontalSpacing="18dp"
+    android:listSelector="@android:color/transparent"
+    android:scrollbarStyle="outsideOverlay"
+    android:stretchMode="columnWidth"
+    android:verticalSpacing="18dp" />

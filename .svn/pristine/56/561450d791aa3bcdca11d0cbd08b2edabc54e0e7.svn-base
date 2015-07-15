@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/collection_warning_bg" android:state_hovered="false"/>
+    <item android:drawable="@drawable/btn_selected_tv" android:state_hovered="true"/>
+
+</selector>

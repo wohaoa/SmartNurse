@@ -1,0 +1,116 @@
+<resources>
+
+    <!-- TV -->
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="userdetail_view">465dp</dimen>
+    <dimen name="userdetail_imageview">80dp</dimen>
+    <dimen name="userdetail_linelayout">70dp</dimen>
+    <!-- 问题 -->
+    <dimen name="userdetail_relayout">90dp</dimen>
+    <dimen name="userdetail_relayout_top">40dp</dimen>
+    <dimen name="userdetail_framelayout_padding">23dp</dimen>
+    <dimen name="userdetail_framelayout_top">5dp</dimen>
+    <dimen name="userdetail_line_old_marginLeft">35dp</dimen>
+    <dimen name="userdetail_line_old_margintop">60dp</dimen>
+    <dimen name="userdetail_line_margintop">10dp</dimen>
+    <dimen name="userdetail_line_linelayout_margintop">60dp</dimen>
+    <dimen name="userdetail_linelayout_top">20dp</dimen>
+    <dimen name="userdetail_scrollview_linelayout">80dp</dimen>
+    <dimen name="userdetail_tv_oldname_marginLeft">47dp</dimen>
+    <dimen name="userdetail_tv_oldaccounts_marginLeft">35dp</dimen>
+    <dimen name="userdetail_tv_oldage_marginLeft">10dp</dimen>
+    <dimen name="userdetail_tv_oldsex_marginLeft">30dp</dimen>
+    <dimen name="userdetail_tv_oldadress_marginLeft">30dp</dimen>
+    <dimen name="userdetail_tv_oldmore_marginLeft">70dp</dimen>
+    <dimen name="userdetail_button_health_marginLeft">1dp</dimen>
+    <dimen name="userdetail_button_sports_marginLeft">40dp</dimen>
+    <dimen name="userdetail_relayout_width">530dp</dimen>
+    <dimen name="userdetail_tv_loccationadress_width">110dp</dimen>
+    <dimen name="userdetail_tv_loccationadress_marginLeft">10dp</dimen>
+    <dimen name="userdetail_tv_status_width">50dp</dimen>
+    <dimen name="userdetail_tv_status_marginLeft">40dp</dimen>
+    <dimen name="userdetail_tv_timelabl_width">70dp</dimen>
+    <dimen name="userdetail_tv_timelabl_marginLeft">40dp</dimen>
+    <dimen name="userdetail_tv_time_width">200dp</dimen>
+    <dimen name="userdetail_tv_name_marginTop">14dp</dimen>
+    <dimen name="userdetail_textview_small_size">14dp</dimen>
+    <dimen name="userdetail_textview_middle_size">16dp</dimen>
+    <dimen name="userdetail_textview_big_size">16dp</dimen>
+    <dimen name="userdetail_button_health_width">60dp</dimen>
+    <dimen name="userdetail_button_sports_width">110dp</dimen>
+    <dimen name="userdetail_button_healthandsport_height">40dp</dimen>
+    <dimen name="userdetail_startAxnimMovex">0px</dimen>
+    <dimen name="userdetail_startAxnimMovey">60px</dimen>
+    <dimen name="userdetail_startRelayout">37px</dimen>
+    <dimen name="userdetail_srcollview_height">360dp</dimen>
+    <dimen name="userdetail_tv_agelab_marginleft">260dp</dimen>
+    <dimen name="userdetail_tv_birthdaylab">260dp</dimen>
+    <dimen name="userdetail_RelativeLayout_layout_marginLeft">30dp</dimen>
+    <dimen name="userdetail_tv_braceletlab_marginleft">275dp</dimen>
+    <dimen name="userdetail_tv_bed_marginleft">260dp</dimen>
+    <dimen name="userdetail_tv_childphonelab_marginleft">260dp</dimen>
+
+    <!--
+	 CollectRecordFragment item
+	 WarinFragment item	 -->
+    <dimen name="item_LinearLayout_height">50dp</dimen>
+    <dimen name="item_textview">14dp</dimen>
+    <dimen name="item_LinearLayout_titleheight">45dp</dimen>
+
+    <!-- OldUserHealthInfoFragment1 -->
+    <dimen name="health_LineChartView_height">250dp</dimen>
+    <dimen name="line_block_height">40dp</dimen>
+    <!-- OldUserSleepInfoFragment1 -->
+
+    <dimen name="sleep_LineChartView_width">600dp</dimen>
+    <dimen name="sleep_LineChartView_height">250dp</dimen>
+
+    <!-- fragment_monitor.xml -->
+
+    <dimen name="monitor_dynamic_title_height">43dp</dimen>
+    <dimen name="monitor_text_size">20dp</dimen>
+    <dimen name="monitor_fullscreen_width">43dp</dimen>
+    <dimen name="monitor_fullscreen_height">43dp</dimen>
+    <!-- adapter_dealwaith.xml -->
+    <dimen name="adapter_dealwith_item_height">55dp</dimen>
+    <dimen name="adapter_dealwith_item_margintop">5dp</dimen>
+    <dimen name="adapter_dealwith_item_paddingright">30dp</dimen>
+    <dimen name="adapter_dealwith_layout_warn_type_width">210dp</dimen>
+    <dimen name="adapter_dealwith_text_size">20dp</dimen>
+    <dimen name="adapter_dealwith_civ_photo_widthorheight">30dp</dimen>
+    <dimen name="adapter_dealwith_civ_photo_marginleft">20dp</dimen>
+    <dimen name="adapter_dealwith_btn_feedback_width">81dp</dimen>
+    <dimen name="adapter_dealwith_btn_feedback_height">43dp</dimen>
+    <dimen name="adapter_dynamic_civ_photo_widthorheight">60dp</dimen>
+    <!--<dimen name="dailog_feedback_title_textsize">24dp</dimen>
+    <dimen name="dailog_feedback_rg_margintop">12dp</dimen>
+    <dimen name="dailog_feedback_layout_button_margintop">20dp</dimen>
+    <dimen name="dailog_feedback_layout_button_marginbottom">20dp</dimen>
+    <dimen name="dailog_feedback_button_textsize">20dp</dimen>-->
+    <!-- 整体控件与左、右、上、下边界的间距 -->
+    <dimen name="dialog_feedback_bound_leftmargin">20dp</dimen>
+    <dimen name="dialog_feedback_bound_rightmargin">20dp</dimen>
+    <dimen name="dialog_feedback_bound_topmargin">20dp</dimen>
+    <dimen name="dialog_feedback_bound_bottommargin">20dp</dimen>
+    <!-- 不同种类控件上下的间距 -->
+    <dimen name="dialog_feedback_widget_topmargin">10dp</dimen>
+    <dimen name="dialog_feedback_widget_bottommargin">10dp</dimen>
+    <!-- 确认、取消两个按钮的高度 -->
+    <dimen name="dialog_feedback_button_height">40dp</dimen>
+    <!-- 处理结果 这几个字的字体大小 -->
+	<dimen name="dialog_feedback_title_textsize">20dp</dimen>
+	<!-- 信息方块之间的上下的间距与左右的间距 -->
+	<dimen name="dialog_feedback_message_margin">5dp</dimen>
+	<!-- 信息方块里面的字体大小，包括确认、取消按钮的字体大小 -->
+	<dimen name="dialog_feedback_message_textsize">8dp</dimen>
+	
+	
+	<!-- 判断当前是平板还是TV 1表示tv，0表示平板-->
+	<dimen name="tv_or_pingban">1px</dimen>	
+	<dimen name="collection_persons">20sp</dimen>
+	<dimen name="collection_viewpager_margin">20dp</dimen>
+	<dimen name="collection_gridview_item3_padding">15dp</dimen>
+	<dimen name="collection_gridview_item10_spacing">10dp</dimen>
+</resources>

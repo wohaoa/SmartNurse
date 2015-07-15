@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/item_LinearLayout_height"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/item_LinearLayout_height" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="@dimen/item_LinearLayout_height"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="2"
+            android:background="@android:color/darker_gray"
+            android:gravity="center_vertical|center_horizontal" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@color/chart_content_background" >
+
+                <TextView
+                    android:id="@+id/tv_type"
+                    style="@style/collect_record_title_style"
+                    android:layout_weight="1"
+                    android:textColor="@color/chart_content_color"
+                    android:text="报警类型" />
+
+                <TextView
+                    android:id="@+id/tv_adress"
+                    style="@style/collect_record_title_style"
+                    android:layout_weight="1"
+                    android:textColor="@color/chart_content_color"
+                    android:text="报警地点" />
+
+                <TextView
+                    android:id="@+id/tv_time"
+                    style="@style/collect_record_title_style"
+                    android:layout_weight="1.2"
+                    android:textColor="@color/chart_content_color"
+                    android:text="报警时间" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_weight="3"
+            android:background="@color/chart_content_background" >
+
+            <TextView
+                android:id="@+id/tv_handle"
+                style="@style/collect_record_title_style"
+                android:layout_weight="2.1"
+                android:textColor="@color/chart_content_color"
+                android:text="处理时间" />
+
+            <TextView
+                android:id="@+id/tv_feedtime"
+                style="@style/collect_record_title_style"
+                android:layout_weight="2.1"
+                android:textColor="@color/chart_content_color"
+                android:text="反馈时间" />
+
+            <TextView
+                android:id="@+id/tv_handler"
+                style="@style/collect_record_title_style"
+                android:layout_weight="1.3"
+                android:textColor="@color/chart_content_color"
+                android:text="处理人" />
+
+            <TextView
+                android:id="@+id/tv_detail"
+                style="@style/collect_record_title_style"
+                android:layout_weight="2.5"
+                android:textColor="@color/chart_content_color"
+                android:text="详情" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
