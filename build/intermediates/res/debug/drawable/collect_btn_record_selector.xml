@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/btn_grey_rectangle_normal" android:state_enabled="true" android:state_pressed="false"/>
+    <item android:drawable="@drawable/btn_grey_rectangle_pressed" android:state_enabled="true" android:state_pressed="true"/>
+
+</selector><!-- From: file:/Users/apple/Documents/ASworkspace/SmartNurse/res/drawable/collect_btn_record_selector.xml -->

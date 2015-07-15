@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F9F6"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/btn_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/transparent"
+        android:text="&lt;返回"
+        android:textColor="#65bc5e"
+        android:textSize="24dp" />
+
+    <EditText
+        android:textColor="#757575"
+        android:id="@+id/et_advice"
+        android:textColorHint="#757575"
+        android:hint="请输入您的反馈建议"
+        android:layout_width="fill_parent"
+        android:gravity="left|top"
+        android:layout_height="392dp"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/white"
+        android:padding="22dp"
+        android:textSize="20dp" />
+
+    <Button
+        android:enabled="false"
+        android:id="@+id/btn_commmit"
+        android:layout_width="fill_parent"
+        android:layout_height="58dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/btn_feedback_pressed"
+        android:text="提交意见"
+        android:textColor="@android:color/white"
+        android:textSize="24dp" />
+
+</LinearLayout>

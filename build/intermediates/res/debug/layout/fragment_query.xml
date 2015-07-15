@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F9F6"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/search_bg" >
+
+        <Button
+            android:id="@+id/btn_serach"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp"
+            android:background="@drawable/btn_green_rectangle_selector"
+            android:text="更新"
+            android:textColor="#ffffff"
+            android:textSize="20dp" />
+
+        <com.magicare.smartnurse.view.ClearEditText
+            android:id="@+id/et_serach"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:layout_centerVertical="true"
+            android:layout_margin="12dp"
+            android:layout_toLeftOf="@+id/btn_serach"
+            android:background="@drawable/search_box"
+            android:drawableLeft="@drawable/ic_magnify_black"
+            android:drawablePadding="12dp"
+            android:hint="请输入老人姓名和帐号"
+            android:paddingLeft="20dp"
+            android:textColorHint="#c5c5c5"
+            android:textSize="18dp" />
+    </RelativeLayout>
+
+    <GridView
+        android:id="@+id/gv_serach"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:gravity="center"
+        android:listSelector="@drawable/gridview_press_selector"
+        android:numColumns="10"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="8dp" >
+    </GridView>
+
+</LinearLayout><!-- From: file:/Users/apple/Documents/ASworkspace/SmartNurse/res/layout/fragment_query.xml -->

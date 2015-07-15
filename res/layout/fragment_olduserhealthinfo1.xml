@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#33D2D2D2"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:paddingBottom="10dp"
+        android:orientation="horizontal">
+	    <lecho.lib.hellocharts.view.LineChartView
+	        android:id="@+id/chart"
+	        android:layout_width="fill_parent"
+	        android:layout_height="@dimen/health_LineChartView_height" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/line_block"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/line_block_height"
+        android:background="#33D2D2D2"
+        android:gravity="center"
+        android:orientation="horizontal" >
+        
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_previour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:text="&lt;上个月"
+            android:textColor="#333333"
+            android:textSize="16dp" />
+
+        <Button
+            android:id="@+id/btn_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:background="@android:color/transparent"
+            android:text="下个月>"
+            android:textColor="#333333"
+            android:textSize="16dp" />
+    </LinearLayout>
+
+</LinearLayout>

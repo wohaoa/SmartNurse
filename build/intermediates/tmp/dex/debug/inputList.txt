@@ -1,0 +1,12 @@
+/Users/apple/Documents/ASworkspace/SmartNurse/build/intermediates/classes/debug
+/Users/apple/Documents/ASworkspace/SmartNurse/build/intermediates/pre-dexed/debug/classes-5732f7c7b1da5e8ace521ed6d182aa7404b8d2cf.jar
+/Users/apple/Documents/ASworkspace/SmartNurse/build/intermediates/pre-dexed/debug/Sunflower-2b5c45ebfbc640ef881a3355ba248c0c69ef9464.jar
+/Users/apple/Documents/ASworkspace/SmartNurse/build/intermediates/pre-dexed/debug/gifview-ba6866c1989eed5e22798fbe893d247b05d03ce3.jar
+/Users/apple/Documents/ASworkspace/SmartNurse/build/intermediates/pre-dexed/debug/classes-eae376714d2867c19581fa2c3aa6bebb7d2ab14b.jar
+/Users/apple/Documents/ASworkspace/SmartNurse/build/intermediates/pre-dexed/debug/nineoldandroids-2.4.0-2-744a66f3a42b237758a55918de607673ac19f255.jar
+/Users/apple/Documents/ASworkspace/SmartNurse/build/intermediates/pre-dexed/debug/classes-92fe05c95ce57e3a975ce0af6d4cbad07e4a5d89.jar
+/Users/apple/Documents/ASworkspace/SmartNurse/build/intermediates/pre-dexed/debug/Msc-9fcd7c8baff0d5f27980610b30f233eb2b636327.jar
+/Users/apple/Documents/ASworkspace/SmartNurse/build/intermediates/pre-dexed/debug/jpush-sdk-release1.7.1-53d025c88e7baa8dc86f0b9029ee3de28abd758c.jar
+/Users/apple/Documents/ASworkspace/SmartNurse/build/intermediates/pre-dexed/debug/fastjson-1.1.36-8c09314185c6fccab6c998dc7be840617dfc48d3.jar
+/Users/apple/Documents/ASworkspace/SmartNurse/build/intermediates/pre-dexed/debug/android-support-v7-appcompat-37a75feb6f8bfca036ea0140933597c2c4af339a.jar
+/Users/apple/Documents/ASworkspace/SmartNurse/build/intermediates/pre-dexed/debug/android-support-v4-b1da6538c47d814a7249d1901c7df52d23146c10.jar

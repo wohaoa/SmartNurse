@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f9ed"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="90dp"
+        android:layout_marginRight="90dp" >
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="54dp"
+            android:text="采集完成的数据，需要在WIFI环境下上传至云端"
+            android:textColor="#333333"
+            android:textSize="24dp" />
+
+        <LinearLayout
+            android:id="@+id/line_lvtitle"
+            android:layout_width="fill_parent"
+            android:layout_height="51dp"
+            android:layout_below="@+id/tv_title"
+            android:layout_marginTop="40dp"
+            android:background="#f0f1ee"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_data"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_weight="1.6"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="数据"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/tv_collecttime"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_weight="1.2"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="时间"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/tv_oldid"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_weight="0.7"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="老人ID"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/tv_stauts"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_weight="0.5"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="状态"
+                android:textSize="18dp" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/mylist"
+            android:layout_width="wrap_content"
+            android:layout_height="250dp"
+            android:layout_below="@+id/line_lvtitle"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="3dp"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="3dp" >
+        </ListView>
+
+        <TextView
+            android:id="@+id/tv_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mylist"
+            android:layout_marginTop="20dp"
+            android:text="从 2015-01-25 20:00:00 共有未上传数据 45 条"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btn_upload"
+            android:layout_width="wrap_content"
+            android:layout_height="52dp"
+            android:layout_below="@+id/tv_detail"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/btn_green_rectangle_selector"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="10dp"
+            android:text="上传数据"
+            android:textColor="#ffffff" />
+    </RelativeLayout>
+
+</LinearLayout><!-- From: file:/Users/apple/Documents/ASworkspace/SmartNurse/res/layout/fragment_upload.xml -->

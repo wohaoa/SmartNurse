@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="12dp"
+        android:layout_height="70dp"
+        android:background="#7ed321" />
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+	    <TextView
+	        android:id="@+id/tv_text"
+	        android:layout_width="match_parent"
+	        android:layout_height="70dp"
+	        android:gravity="center_horizontal|center_vertical"
+	        android:text="关于我们 "
+	        android:textColor="#5f6d54"
+	        android:textSize="20dp" />
+        <TextView
+            android:textSize="16sp"
+            android:id="@+id/iv_unconcern"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="right|top"
+            android:background="@drawable/icon_unconcern"
+            android:gravity="center"
+            android:visibility="gone"
+            android:textColor="#ffffff" />
+    </FrameLayout>
+
+</RelativeLayout><!-- From: file:/Users/apple/Documents/ASworkspace/SmartNurse/res/layout/text_item.xml -->

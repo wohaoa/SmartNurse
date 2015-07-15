@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+    
+    <ProgressBar
+        android:id="@+id/pb"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="5dip"
+        android:indeterminateOnly="false"
+        android:max="100"
+        android:progressDrawable="@drawable/progress_bar_states" >
+    </ProgressBar>
+    <WebView
+		android:id="@+id/magicare_view"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+    />
+
+</LinearLayout>
+<!-- From: file:/Users/apple/Documents/ASworkspace/SmartNurse/res/layout/activity_aboutus.xml -->

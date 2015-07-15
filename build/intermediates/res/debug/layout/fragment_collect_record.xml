@@ -1,0 +1,142 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_record"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="76dp" >
+
+        <Button
+            android:id="@+id/btn_reoced_reback"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="22dp"
+            android:background="@drawable/collect_btn_back_selector"
+            android:text="&lt;返回"
+            android:textColor="#65ba21"
+            android:textSize="24dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="22dp"
+            android:text="采集记录"
+            android:textColor="#979797"
+            android:textSize="32dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="22dp"
+        android:layout_marginRight="22dp"
+        android:background="#f0f1ee"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="4"
+            android:background="#f0f1ee" >
+
+            <TextView
+                android:id="@+id/tv_collect_time"
+                style="@style/collect_record_title_style"
+                android:layout_weight="1.8"
+                android:text="采集时间"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_nursename"
+                style="@style/collect_record_title_style"
+                android:layout_weight="1"
+                android:text="采集人"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_userid"
+                style="@style/collect_record_title_style"
+                android:layout_weight="1"
+                android:text="老人编号"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_username"
+                style="@style/collect_record_title_style"
+                android:layout_weight="1"
+                android:text="姓名"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="5"
+            android:background="#f0f1ee" >
+
+            <TextView
+                android:id="@+id/tv_weight"
+                style="@style/collect_record_title_style"
+                android:layout_weight="1.3"
+                android:text="体重(Kg)"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_bloodpressure"
+                style="@style/collect_record_title_style"
+                android:layout_weight="1.3"
+                android:text="血压(mmHg)"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_heartrate"
+                style="@style/collect_record_title_style"
+                android:layout_weight="1.3"
+                android:text="心率(BPM)"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_bloodsugar"
+                style="@style/collect_record_title_style"
+                android:layout_weight="1.3"
+                android:text="血糖(MMOL/L)"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:gravity="center"
+                android:visibility="invisible" >
+
+                <Button
+                    android:id="@+id/btn_retest"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/collect_btn_retest_selector"
+                    android:gravity="center"
+                    android:text="重新测量"
+                    android:textSize="18dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lv_collect_record"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="22dp"
+        android:layout_marginLeft="22dp"
+        android:layout_marginRight="22dp"
+        android:layout_marginTop="4dp"
+        android:divider="@null"
+        android:dividerHeight="4dp" >
+    </ListView>
+
+</LinearLayout><!-- From: file:/Users/apple/Documents/ASworkspace/SmartNurse/res/layout/fragment_collect_record.xml -->

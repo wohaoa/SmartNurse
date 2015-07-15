@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res/com.magicare.smartnurse"
+    android:id="@+id/layout_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f8f9f6"
+    android:orientation="vertical" >
+
+    <include layout="@layout/fragment_collect_title" />
+
+    <include layout="@layout/fragment_collect_collect" />
+
+    <include layout="@layout/fragment_collect_query" />
+
+    <include layout="@layout/fragment_collect_record" />
+
+</LinearLayout><!-- From: file:/Users/apple/Documents/ASworkspace/SmartNurse/res/layout/fragment_collect.xml -->

@@ -1,0 +1,350 @@
+package com.magicare.smartnurse.logic;
+
+import java.io.BufferedInputStream;
+import java.io.BufferedOutputStream;
+import java.io.File;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
+import java.net.HttpURLConnection;
+import java.net.URL;
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+
+import android.content.Context;
+import android.content.pm.PackageInfo;
+import android.content.pm.PackageManager.NameNotFoundException;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.os.AsyncTask;
+import android.os.Environment;
+import android.support.v4.util.LruCache;
+import android.text.TextUtils;
+import android.widget.ImageView;
+import android.widget.ListView;
+
+import com.magicare.smartnurse.bean.ConcernBean;
+import com.magicare.smartnurse.utils.DiskLruCache;
+import com.magicare.smartnurse.utils.FileUtils;
+
+
+public class BitmapManager {
+	/**
+	 * 图片缓存技术的核心类，用于缓存所有下载好的图片，在程序内存达到设定值时会将最少最近使用的图片移除掉。
+	 */
+	private static LruCache<String, Bitmap> mMemoryCache;
+	private static Set<BitmapWorkerTask> taskCollection;
+	private Context mContext;
+	private ListView mPhotoWall;
+	private List<ConcernBean> mList;
+    // 二级文件缓存基于 DiskLruCache
+    private DiskLruCache diskCache;
+    // 文件缓存默认 10M
+    static final int DISK_CACHE_DEFAULT_SIZE = 10 * 1024 * 1024;
+	
+    public BitmapManager(Context context, ListView photoWall, List<ConcernBean> list){
+    	this.mContext = context;
+    	this.mPhotoWall = photoWall;
+    	this.mList = list;
+		taskCollection = new HashSet<BitmapWorkerTask>();
+		// 获取应用程序最大可用内存
+		int maxMemory = (int) Runtime.getRuntime().maxMemory();
+		int cacheSize = maxMemory / 8;
+		
+		// 设置图片缓存大小为程序最大可用内存的1/8
+		mMemoryCache = new LruCache<String, Bitmap>(cacheSize) {
+			@Override
+			protected int sizeOf(String key, Bitmap bitmap) {
+				return bitmap.getByteCount();
+			}
+		};   
+		initDiskLruCache();
+    }
+    
+    /**
+     * 初始化文件缓存
+     */
+    private void initDiskLruCache() {
+        try {
+            File cacheDir = getDiskCacheDir(mContext, "bitmap");
+            if (!cacheDir.exists()) {
+                cacheDir.mkdirs();
+            }
+            diskCache = DiskLruCache.open(cacheDir, getAppVersion(mContext), 1, DISK_CACHE_DEFAULT_SIZE);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+    
+    private File getDiskCacheDir(Context context, String uniqueName) {
+        String cachePath;
+        if (Environment.MEDIA_MOUNTED.equals(Environment.getExternalStorageState())
+                || !Environment.isExternalStorageRemovable()) {
+            cachePath = context.getExternalCacheDir().getPath();
+        } else {
+            cachePath = context.getCacheDir().getPath();
+        }
+        return new File(cachePath + File.separator + uniqueName);
+    }
+    
+    private int getAppVersion(Context context) {
+        try {
+            PackageInfo info = context.getPackageManager().getPackageInfo(context.getPackageName(), 0);
+            return info.versionCode;
+        } catch (NameNotFoundException e) {
+            e.printStackTrace();
+        }
+        return 1;
+    }
+    
+    
+    /*
+     * 用于更新 list
+     */
+    public void updateData(List<ConcernBean> list, String updateNumber){
+    	mList = list;
+    	if(updateNumber != null && mMemoryCache.get(updateNumber) != null){
+    		mMemoryCache.remove(updateNumber);
+    	}
+    }
+	
+	/**
+	 * 从LruCache中获取一张图片，如果不存在就返回null。
+	 * 
+	 * @param key
+	 *            LruCache的键，这里传入图片的URL地址。
+	 * @return 对应传入键的Bitmap对象，或者null。
+	 */
+	public Bitmap getBitmapFromMemoryCache(String key) {
+		if(key == null){
+			return null;
+		}else{
+			return mMemoryCache.get(key);
+		}
+	}
+	
+	/**
+	 * 将一张图片存储到LruCache中。
+	 * 
+	 * @param key
+	 *            LruCache的键，这里传入图片的URL地址。
+	 * @param bitmap
+	 *            LruCache的键，这里传入从网络上下载的Bitmap对象。
+	 */
+	public void addBitmapToMemoryCache(String key, Bitmap bitmap) {
+		if (getBitmapFromMemoryCache(key) == null) {
+			mMemoryCache.put(key, bitmap);
+		}
+	}
+	
+	
+	public void loadBitmaps(int firstVisibleItem, int visibleItemCount) {
+		try {
+			for (int i = firstVisibleItem; i < firstVisibleItem + visibleItemCount; i++) {
+				
+				String imageUrl = FileUtils.getMapForJson(mList.get(i).getReply_images());
+				Bitmap bitmap = getBitmapFromMemoryCache(imageUrl);
+				if (bitmap == null) {//缓存中没有，先从拷贝的number路径中取
+					
+					bitmap = getBitmapFromDisk(imageUrl);
+					if (bitmap == null) {
+		            	BitmapWorkerTask task = new BitmapWorkerTask(mList.get(i).getExhort_id());
+		            	taskCollection.add(task);
+		            	task.execute(imageUrl);
+					}else{
+						addBitmapToMemoryCache(imageUrl, bitmap);
+						ImageView imageView = (ImageView) mPhotoWall.findViewWithTag(mList.get(i).getExhort_id());
+						if (imageView != null && bitmap != null) {
+							imageView.setImageBitmap(bitmap);
+						}
+					}
+
+				} else {
+					ImageView imageView = (ImageView) mPhotoWall.findViewWithTag(mList.get(i).getExhort_id());
+					if (imageView != null && bitmap != null) {
+						imageView.setImageBitmap(bitmap);
+					}
+				}
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+	
+	/**
+	 * 异步下载图片的任务。
+	 * 
+	 * @author guolin
+	 */
+	class BitmapWorkerTask extends AsyncTask<String, Void, Bitmap> {
+
+		/**
+		 * 图片的URL地址
+		 */
+		private String imageUrl;
+		
+        private int id;
+
+        public BitmapWorkerTask(int id) {
+            this.id = id;
+        }
+
+		@Override
+		protected Bitmap doInBackground(String... params) {
+//			imageUrl = params[0];
+//			// 在后台开始下载图片
+//			Bitmap bitmap = downloadBitmap(params[0]);
+//			if (bitmap != null) {
+//				// 图片下载完成后缓存到LrcCache中
+//				addBitmapToMemoryCache(params[0], bitmap);
+//			}
+//			return bitmap;
+            try {
+                imageUrl = params[0];
+                String key = hashKeyForDisk(imageUrl);
+                // 下载成功后直接将图片流写入文件缓存
+                DiskLruCache.Editor editor = diskCache.edit(key);
+                if (editor != null) {
+                    OutputStream outputStream = editor.newOutputStream(0);
+                    if (downloadUrlToStream(imageUrl, outputStream)) {
+                        editor.commit();
+                    } else {
+                        editor.abort();
+                    }
+                }
+                diskCache.flush();
+
+                Bitmap bitmap = getBitmapFromDisk(imageUrl);
+                if (bitmap != null) {
+                    // 将图片加入到内存缓存中
+                	addBitmapToMemoryCache(imageUrl, bitmap);
+                }
+
+                return bitmap;
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+
+            return null;
+		}
+
+		@Override
+		protected void onPostExecute(Bitmap bitmap) {
+			super.onPostExecute(bitmap);
+			// 根据Tag找到相应的ImageView控件，将下载好的图片显示出来。
+			ImageView imageView = (ImageView) mPhotoWall.findViewWithTag(id);
+			if (imageView != null && bitmap != null) {
+				imageView.setImageBitmap(bitmap);
+			}
+			taskCollection.remove(this);
+		}
+
+		/**
+		 * 建立HTTP请求，并获取Bitmap对象。
+		 * 
+		 * @param imageUrl
+		 *            图片的URL地址
+		 * @return 解析后的Bitmap对象
+		 */
+		private Bitmap downloadBitmap(String number) {
+            Bitmap bitmap = null;  
+            HttpURLConnection con = null;  
+            try {  
+                URL url = new URL(imageUrl);  
+                con = (HttpURLConnection) url.openConnection();  
+                con.setConnectTimeout(5 * 1000);  
+                con.setReadTimeout(10 * 1000);  
+                bitmap = BitmapFactory.decodeStream(con.getInputStream());  
+            } catch (Exception e) {  
+                e.printStackTrace();  
+            } finally {  
+                if (con != null) {  
+                    con.disconnect();  
+                }  
+            }  
+            return bitmap;  
+		}
+		
+        private boolean downloadUrlToStream(String urlString, OutputStream outputStream) {
+            HttpURLConnection urlConnection = null;
+            BufferedOutputStream out = null;
+            BufferedInputStream in = null;
+            try {
+                final URL url = new URL(urlString);
+                urlConnection = (HttpURLConnection) url.openConnection();
+                in = new BufferedInputStream(urlConnection.getInputStream(), 8 * 1024);
+                out = new BufferedOutputStream(outputStream, 8 * 1024);
+                int b;
+                while ((b = in.read()) != -1) {
+                    out.write(b);
+                }
+                return true;
+            } catch (final IOException e) {
+                e.printStackTrace();
+            } finally {
+                if (urlConnection != null) {
+                    urlConnection.disconnect();
+                }
+                try {
+                    if (out != null) {
+                        out.close();
+                    }
+                    if (in != null) {
+                        in.close();
+                    }
+                } catch (final IOException e) {
+                    e.printStackTrace();
+                }
+            }
+            return false;
+        }
+	}
+	
+    /**
+     * 从文件缓存中拿
+     * 
+     * @param url
+     */
+    public Bitmap getBitmapFromDisk(String url) {
+        try {
+            String key = hashKeyForDisk(url);
+            DiskLruCache.Snapshot snapShot = diskCache.get(key);
+            if (snapShot != null) {
+                InputStream is = snapShot.getInputStream(0);
+                Bitmap bitmap = BitmapFactory.decodeStream(is);
+                return bitmap;
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        return null;
+    }
+	
+    private String hashKeyForDisk(String key) {
+        String cacheKey;
+        try {
+            final MessageDigest mDigest = MessageDigest.getInstance("MD5");
+            mDigest.update(key.getBytes());
+            cacheKey = bytesToHexString(mDigest.digest());
+        } catch (NoSuchAlgorithmException e) {
+            cacheKey = String.valueOf(key.hashCode());
+        }
+        return cacheKey;
+    }
+    
+    private String bytesToHexString(byte[] bytes) {
+        StringBuilder sb = new StringBuilder();
+        for (int i = 0; i < bytes.length; i++) {
+            String hex = Integer.toHexString(0xFF & bytes[i]);
+            if (hex.length() == 1) {
+                sb.append('0');
+            }
+            sb.append(hex);
+        }
+        return sb.toString();
+    }
+}

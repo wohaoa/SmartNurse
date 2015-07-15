@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:background="#f5f9ed"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+       <LinearLayout
+            android:layout_marginLeft="23dp"
+            android:layout_marginRight="27dp"
+            android:id="@+id/layout_warn_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <com.magicare.smartnurse.view.CircleImageView
+                xmlns:myxmlns="http://schemas.android.com/apk/res/com.magicare.smartnurse"
+                android:id="@+id/civ_photo"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="14dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_defaultface"
+                myxmlns:border_color="@android:color/transparent"
+       		    myxmlns:border_width="0dp" />
+
+        </LinearLayout>
+
+  		<LinearLayout
+  		    android:layout_marginRight="23dp"
+  		    android:layout_width="match_parent"
+  		    android:layout_height="match_parent"
+  		    android:orientation="vertical" >
+  		    
+  		    <RelativeLayout 
+  		        android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp">
+                
+  		        <LinearLayout
+  		            android:id="@+id/concern_title_layout"
+  		            android:layout_marginBottom="12dp"
+  		            android:orientation="horizontal"
+  		            android:layout_alignParentLeft="true"
+  		            android:layout_width="wrap_content"
+                	android:layout_height="wrap_content">
+            		<TextView
+                		android:layout_width="wrap_content"
+                		android:layout_height="wrap_content"
+                		android:singleLine="true"
+                		android:textColor="#838383"
+                		android:textSize="20dp"
+                		android:text="来自" />
+            		<TextView
+            	    	android:id="@+id/concern_title"
+                		android:layout_width="wrap_content"
+                		android:layout_height="wrap_content"
+                		android:singleLine="true"
+                		android:textColor="#333333"
+                		android:textSize="24dp"
+                		android:text="张三丰" />
+            	</LinearLayout>
+           <!--  	
+            	<ImageView 
+            	    android:id="@+id/iv_newphoto"
+            	    android:layout_width="wrap_content"
+            	    android:layout_height="wrap_content"
+            	    android:src="@drawable/icon_new"
+            	    android:layout_toRightOf="@id/concern_title_layout"
+            	    android:layout_marginLeft="18dp" />
+             -->	
+            	<TextView
+            	    android:id="@+id/tv_time"
+            	    android:layout_alignParentRight="true"
+                	android:layout_width="wrap_content"
+                	android:layout_height="wrap_content"
+                	android:singleLine="true"
+                	android:layout_marginBottom="6dp"
+                	android:layout_marginRight="10dp"
+                	android:textSize="20dp"
+                	android:textColor="#838383"
+                	android:text="15/4/22  20:28" />
+            </RelativeLayout>
+            
+            <TextView
+                android:id="@+id/tv_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textColor="#838383"
+                android:text="多喝水多加衣服" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout><!-- From: file:/Users/apple/Documents/ASworkspace/SmartNurse/res/layout/concern_item.xml -->

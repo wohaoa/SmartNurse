@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/Users/apple/Documents/ASworkspace/SmartNurse/res/values-sw720dp/colors.xml -->
+    <eat-comment/>
+    <color name="active_warn_color">#ff6838</color>
+    <color name="active_warn_color1">#ffff6838</color>
+    <color name="chart_btn_color">#f1f1f1</color>
+    <color name="chart_btn_enable">#333333</color>
+    <color name="chart_btn_nonenable">#a4a4a4</color>
+    <color name="chart_content_background">#ffffff</color>
+    <color name="chart_content_color">#000000</color>
+    <color name="chart_hint_text">#000000</color>
+    <color name="chart_scale_text">#5c5c5c</color>
+    <color name="chart_title_background">#f0f1ee</color>
+    <color name="chart_title_color">#000000</color>
+    <color name="content_color">#737373</color>
+    <color name="deal_warn_color">#ffa1a1a1</color>
+    <color name="detail_back">#65bc5e</color>
+    <color name="detail_background">#f8f9f6</color>
+    <color name="detail_info_background">#f1f3ed</color>
+    <color name="detail_info_content">#666666</color>
+    <color name="detail_info_item">#7480a5</color>
+    <color name="detail_info_title">#9e9e9e</color>
+    <color name="detail_shadow">#d8dcd1</color>
+    <color name="dynamic_text_color">#ffffff</color>
+    <color name="dynamic_title_color">#65ba21</color>
+    <color name="fall_warn">#fff5a623</color>
+    <color name="gridview_press">#54666666</color>
+    <color name="list_backgroud_color">#2fb3cb</color>
+    <color name="menu_btn_green_normal">#65BA21</color>
+    <color name="menu_btn_green_press">#7ED321</color>
+    <color name="monitor_background_color">#ffffffff</color>
+    <color name="out_area_warn">#ff4f99da</color>
+    <color name="photo_out_color">#ff82d136</color>
+    <color name="title_color">#0f8ec5</color>
+    <color name="tv_name_color">#ff000000</color>
+    <color name="warn_out_color">#ffff5722</color>
+    <color name="white">#FFFFFF</color>
+    <!-- From: file:/Users/apple/Documents/ASworkspace/SmartNurse/res/values-sw720dp/dimens.xml -->
+    <eat-comment/>
+    <dimen name="activity_horizontal_margin">64dp</dimen>
+    <dimen name="activity_userdetail_imageview">160dp</dimen>
+    <dimen name="activity_userdetail_linelayout">84dp</dimen>
+    <dimen name="activity_userdetail_relayout">155dp</dimen>
+    <dimen name="activity_userdetail_view">610dp</dimen>
+    <dimen name="activity_userdetasil_relayout_top">48dp</dimen>
+    <dimen name="adapter_dealwith_btn_feedback_height">53dp</dimen>
+    <dimen name="adapter_dealwith_btn_feedback_width">91dp</dimen>
+    <dimen name="adapter_dealwith_civ_photo_marginleft">69dp</dimen>
+    <dimen name="adapter_dealwith_civ_photo_widthorheight">40dp</dimen>
+    <dimen name="adapter_dealwith_item_height">90dp</dimen>
+    <dimen name="adapter_dealwith_item_margintop">10dp</dimen>
+    <dimen name="adapter_dealwith_item_paddingright">50dp</dimen>
+    <dimen name="adapter_dealwith_layout_warn_type_width">256dp</dimen>
+    <dimen name="adapter_dealwith_text_size">24dp</dimen>
+    <dimen name="adapter_dynamic_civ_photo_widthorheight">80dp</dimen>
+    <dimen name="dialog_feedback_bound_bottommargin">40dp</dimen>
+    <dimen name="dialog_feedback_bound_leftmargin">40dp</dimen>
+    <dimen name="dialog_feedback_bound_rightmargin">40dp</dimen>
+    <dimen name="dialog_feedback_bound_topmargin">40dp</dimen>
+    <dimen name="dialog_feedback_button_height">60dp</dimen>
+    <dimen name="dialog_feedback_message_margin">10dp</dimen>
+    <dimen name="dialog_feedback_message_textsize">14dp</dimen>
+    <dimen name="dialog_feedback_title_textsize">20dp</dimen>
+    <dimen name="dialog_feedback_widget_bottommargin">10dp</dimen>
+    <dimen name="dialog_feedback_widget_topmargin">10dp</dimen>
+    <dimen name="health_LineChartView_height">400dp</dimen>
+    <dimen name="item_LinearLayout_height">62dp</dimen>
+    <dimen name="item_LinearLayout_titleheight">45dp</dimen>
+    <dimen name="item_textview">18dp</dimen>
+    <dimen name="line_block_height">40dp</dimen>
+    <dimen name="monitor_dynamic_title_height">63dp</dimen>
+    <dimen name="monitor_fullscreen_height">63dp</dimen>
+    <dimen name="monitor_fullscreen_width">63dp</dimen>
+    <dimen name="monitor_text_size">24dp</dimen>
+    <dimen name="sleep_LineChartView_height">350dp</dimen>
+    <dimen name="sleep_LineChartView_width">848dp</dimen>
+    <dimen name="tv_or_pingban">0px</dimen>
+    <dimen name="userdetail_RelativeLayout_layout_marginLeft">17dp</dimen>
+    <dimen name="userdetail_button_health_marginLeft">1dp</dimen>
+    <dimen name="userdetail_button_health_width">70dp</dimen>
+    <dimen name="userdetail_button_healthandsport_height">48dp</dimen>
+    <dimen name="userdetail_button_sports_marginLeft">70dp</dimen>
+    <dimen name="userdetail_button_sports_width">100dp</dimen>
+    <dimen name="userdetail_framelayout_padding">24dp</dimen>
+    <dimen name="userdetail_framelayout_top">20dp</dimen>
+    <dimen name="userdetail_imageview">160dp</dimen>
+    <dimen name="userdetail_line_linelayout_margintop">60dp</dimen>
+    <dimen name="userdetail_line_margintop">70dp</dimen>
+    <dimen name="userdetail_line_old_marginLeft">80dp</dimen>
+    <dimen name="userdetail_line_old_margintop">100dp</dimen>
+    <dimen name="userdetail_linelayout">84dp</dimen>
+    <dimen name="userdetail_linelayout_top">20dp</dimen>
+    <dimen name="userdetail_relayout">155dp</dimen>
+    <dimen name="userdetail_relayout_top">48dp</dimen>
+    <dimen name="userdetail_relayout_width">700dp</dimen>
+    <dimen name="userdetail_scrollview_linelayout">70dp</dimen>
+    <dimen name="userdetail_srcollview_height">470dp</dimen>
+    <dimen name="userdetail_startAxnimMovex">-25px</dimen>
+    <dimen name="userdetail_startAxnimMovey">50px</dimen>
+    <dimen name="userdetail_startRelayout">37px</dimen>
+    <dimen name="userdetail_textview_big_size">24dp</dimen>
+    <dimen name="userdetail_textview_middle_size">20dp</dimen>
+    <dimen name="userdetail_textview_small_size">18dp</dimen>
+    <dimen name="userdetail_tv_agelab_marginleft">350dp</dimen>
+    <dimen name="userdetail_tv_bed_marginleft">350dp</dimen>
+    <dimen name="userdetail_tv_birthdaylab">350dp</dimen>
+    <dimen name="userdetail_tv_braceletlab_marginleft">370dp</dimen>
+    <dimen name="userdetail_tv_childphonelab_marginleft">350dp</dimen>
+    <dimen name="userdetail_tv_loccationadress_marginLeft">10dp</dimen>
+    <dimen name="userdetail_tv_loccationadress_width">180dp</dimen>
+    <dimen name="userdetail_tv_name_marginTop">20dp</dimen>
+    <dimen name="userdetail_tv_oldaccounts_marginLeft">35dp</dimen>
+    <dimen name="userdetail_tv_oldadress_marginLeft">30dp</dimen>
+    <dimen name="userdetail_tv_oldage_marginLeft">30dp</dimen>
+    <dimen name="userdetail_tv_oldmore_marginLeft">70dp</dimen>
+    <dimen name="userdetail_tv_oldname_marginLeft">47dp</dimen>
+    <dimen name="userdetail_tv_oldsex_marginLeft">30dp</dimen>
+    <dimen name="userdetail_tv_status_marginLeft">30dp</dimen>
+    <dimen name="userdetail_tv_status_width">50dp</dimen>
+    <dimen name="userdetail_tv_time_width">250dp</dimen>
+    <dimen name="userdetail_tv_timelabl_marginLeft">20dp</dimen>
+    <dimen name="userdetail_tv_timelabl_width">105dp</dimen>
+    <dimen name="userdetail_view">610dp</dimen>
+    <!-- From: file:/Users/apple/Documents/ASworkspace/SmartNurse/res/values-sw720dp/colors.xml -->
+    <eat-comment/>
+    <drawable name="layout_backgroud">#000000</drawable>
+    <drawable name="line_background">#161823</drawable>
+    <!-- From: file:/Users/apple/Documents/ASworkspace/SmartNurse/res/values-sw720dp/styles.xml -->
+    <eat-comment/>
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+
+
+
+
+
+        -->
+    </style>
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    <style name="MyDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <!-- 边框 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <!-- 无标题 -->
+        <!-- <item name="android:windowBackground">@null</item> -->
+
+
+        <!-- 自己想要的背景 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 模糊 -->
+        <item name="android:backgroundDimAmount">0.6</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+    <style name="adapter_dealwith_layout_user">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">4</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+    <style name="adapter_dealwith_location">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textSize">@dimen/adapter_dealwith_text_size</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_weight">3</item>
+        <item name="android:textColor">#333333</item>
+    </style>
+    <style name="adapter_dealwith_warn_time">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textSize">@dimen/adapter_dealwith_text_size</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_weight">3</item>
+        <item name="android:textColor">#333333</item>
+    </style>
+    <style name="collect_record_title_style">
+        <item name="android:textSize">18dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:textColor">#333333</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="collect_user_txt_style">
+        <item name="android:textSize">24dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textColor">#444343</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginLeft">38dp</item>
+    </style>
+    <style name="dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.6</item>
+    </style>
+    <style name="monitor_content">
+        <item name="android:textSize">@dimen/adapter_dealwith_text_size</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textColor">#333333</item>
+    </style>
+    <style name="radio_txt_style">
+        <item name="android:textSize">18dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:button">@drawable/radio_selector</item>
+        <item name="android:textColor">#333333</item>
+        <item name="android:layout_marginTop">18dp</item>
+        <item name="android:paddingLeft">15dp</item>
+    </style>
+</resources>

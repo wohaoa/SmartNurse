@@ -1,0 +1,182 @@
+package com.magicare.smartnurse.database.dao;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import android.content.ContentValues;
+import android.content.Context;
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
+import android.provider.BaseColumns;
+
+import com.magicare.smartnurse.bean.FeedBean;
+import com.magicare.smartnurse.database.MySqliteHelper;
+
+/**
+ * 
+ * @author scott
+ * 
+ *         Function:反馈信息
+ */
+public class DBFeed extends MySqliteHelper {
+
+	public static String DATABASE_TABLE = "feedinfo";
+
+	public static final String CreateTableSql;
+
+	private static SQLiteDatabase db;
+
+	public static final String COLUMN_ID = BaseColumns._ID, COLUMN_FEEDID = "feed_id", COLUMN_CONTENT = "content",
+			COLUMN_REMARK1 = "remark1", COLUMN_REMARK2 = "remark2";
+
+	public static final String[] dispColumns = { COLUMN_ID, COLUMN_FEEDID, COLUMN_CONTENT };
+
+	static {
+		StringBuilder strSql = new StringBuilder();
+		strSql.append("CREATE TABLE " + " IF NOT EXISTS " + DATABASE_TABLE + "( ");
+		strSql.append(COLUMN_ID + " INTEGER PRIMARY KEY AUTOINCREMENT , ");
+		strSql.append(COLUMN_FEEDID + " INTEGER , ");
+		strSql.append(COLUMN_CONTENT + " NVARCHAR(100) ,");
+		strSql.append(COLUMN_REMARK1 + " NVARCHAR(100) ,");
+		strSql.append(COLUMN_REMARK2 + " NVARCHAR(100) ");
+		strSql.append(" ) ;");
+		CreateTableSql = strSql.toString();
+	}
+
+	private static DBFeed dbApp = null;
+
+	public synchronized static DBFeed getInstance(Context context) {
+		if (dbApp == null) {
+			dbApp = new DBFeed(context);
+		}
+		return dbApp;
+	}
+
+	private DBFeed(Context context) {
+		super(context);
+	}
+
+	public void beginTransaction() {
+		db.beginTransaction();
+	}
+
+	public void setTransactionSuccessful() {
+		db.setTransactionSuccessful();
+	}
+
+	public void endTransaction() {
+		db.endTransaction();
+	}
+
+	/**
+	 * 插入
+	 * 
+	 * @param oldinfo
+	 * @return
+	 */
+	public synchronized long insert(FeedBean bean) {
+		long count = 0;
+		if (bean == null) {
+			ContentValues values = new ContentValues();
+			values.put(COLUMN_FEEDID, bean.getFeed_id());
+			values.put(COLUMN_CONTENT, bean.getContent());
+			count = db.insert(DATABASE_TABLE, null, values);
+		}
+		return count;
+	}
+
+	/**
+	 * 
+	 * @param info
+	 * @return
+	 */
+	public long insert(List<FeedBean> list) {
+		long count = 0;
+		beginTransaction();
+		try {
+			for (int i = 0; i < list.size(); i++) {
+				FeedBean bean = list.get(i);
+				if (!isExistFeed(bean.getFeed_id())) {
+					ContentValues values = new ContentValues();
+					values.put(COLUMN_FEEDID, bean.getFeed_id());
+					values.put(COLUMN_CONTENT, bean.getContent());
+					count += db.insert(DATABASE_TABLE, null, values);
+				} else {
+					updateFeed(bean);
+				}
+			}
+			setTransactionSuccessful();
+		} catch (Exception e) {
+			// TODO: handle exception
+			e.printStackTrace();
+		} finally {
+			endTransaction();
+		}
+		return count;
+	}
+
+	public boolean isExistFeed(int feedId) {
+		if (db != null) {
+			Cursor cursor = db.rawQuery("SELECT COUNT(*) FROM " + DATABASE_TABLE + " where " + COLUMN_FEEDID + " = ? ",
+					new String[] { feedId + "" });
+			if (cursor != null) {
+				if (cursor.moveToPosition(0)) {
+					return cursor.getInt(0) == 0 ? false : true;
+				}
+				cursor.close();
+			}
+		}
+		return false;
+	}
+
+	public boolean updateFeed(FeedBean bean) {
+		ContentValues values = new ContentValues();
+		values.put(COLUMN_CONTENT, bean.getContent());
+		int count = db.update(DATABASE_TABLE, values, COLUMN_FEEDID + "=? ", new String[] { bean.getFeed_id() + "" });
+		return count > 0 ? true : false;
+	}
+	
+	public long deleteAll() {
+		int count = db.delete(DATABASE_TABLE, null, null);
+		return count;
+	}
+
+	public List<FeedBean> getAllFeedInfo() {
+		List<FeedBean> list = null;
+		if (db != null) {
+			Cursor cursor = db.query(DATABASE_TABLE, dispColumns, null, null, null, null, null);
+			if (cursor == null) {
+				return null;
+			}
+			int count = cursor.getCount();
+			FeedBean bean = null;
+			list = new ArrayList<FeedBean>();
+			for (int i = 0; i < count; i++) {
+				if (cursor.moveToPosition(i)) {
+					bean = new FeedBean();
+					bean.setFeed_id(cursor.getInt(cursor.getColumnIndex(COLUMN_FEEDID)));
+					bean.setContent(cursor.getString(cursor.getColumnIndex(COLUMN_CONTENT)));
+					list.add(bean);
+				}
+			}
+			cursor.close();
+		}
+		return list;
+	}
+
+	@Override
+	public synchronized void close() {
+		if (db != null) {
+			db.close();
+
+			db = null;
+		}
+	}
+
+	@Override
+	public synchronized void open() {
+		if (db == null) {
+			db = getWritableDatabase();
+		}
+	}
+}

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <com.magicare.smartnurse.view.CircleImageView
+                xmlns:myxmlns="http://schemas.android.com/apk/res/com.magicare.smartnurse"
+                android:id="@+id/civ_photo"
+                android:layout_width="@dimen/adapter_dynamic_civ_photo_widthorheight"
+                android:layout_height="@dimen/adapter_dynamic_civ_photo_widthorheight"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_defaultface"
+                myxmlns:border_color="#ffffff"
+                myxmlns:border_width="5dp"
+                myxmlns:inner_color="#ffffff"
+                myxmlns:out_color="@color/photo_out_color" />
+
+            <ImageView
+                android:id="@+id/iv_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|bottom"
+                android:layout_marginBottom="8dp"
+                android:src="@drawable/ic_sport_circle" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:singleLine="true"
+                android:text="张三丰"
+                android:textColor="#f1f1f1"
+                android:textSize="20dp" />
+
+            <ImageView
+                android:id="@+id/tv_battery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:visibility="gone"
+                android:src="@drawable/icon_battery_low" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout><!-- From: file:/Users/apple/Documents/ASworkspace/SmartNurse/res/layout/dynamic_display_item.xml -->

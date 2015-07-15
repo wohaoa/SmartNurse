@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/apple/Documents/ASworkspace/SmartNurse/libs/android-support-v4.jar"
+        jumboMode="false"
+        revision="21.1.1"
+        sha1="ded9acc6a9792b8f1afc470f0c9cd36d178914cd">
+        <dex dex="/Users/apple/Documents/ASworkspace/SmartNurse/build/intermediates/pre-dexed/debug/android-support-v4-b1da6538c47d814a7249d1901c7df52d23146c10.jar" />
+    </item>
+    <item
+        jar="/Users/apple/Documents/ASworkspace/SmartNurse/build/intermediates/exploded-aar/SmartNurse/android-support-v7-appcompat/unspecified/libs/android-support-v7-appcompat.jar"
+        jumboMode="false"
+        revision="21.1.1"
+        sha1="6320cadeeae06d913978807ee787e9fafac77a27">
+        <dex dex="/Users/apple/Documents/ASworkspace/SmartNurse/build/intermediates/pre-dexed/debug/android-support-v7-appcompat-37a75feb6f8bfca036ea0140933597c2c4af339a.jar" />
+    </item>
+    <item
+        jar="/Users/apple/Documents/ASworkspace/SmartNurse/build/intermediates/exploded-aar/SmartNurse/android-support-v7-appcompat/unspecified/classes.jar"
+        jumboMode="false"
+        revision="21.1.1"
+        sha1="ed657e9a1a61b59fe74190d026f64973a73a05e2">
+        <dex dex="/Users/apple/Documents/ASworkspace/SmartNurse/build/intermediates/pre-dexed/debug/classes-5732f7c7b1da5e8ace521ed6d182aa7404b8d2cf.jar" />
+    </item>
+    <item
+        jar="/Users/apple/Documents/ASworkspace/SmartNurse/libs/gifview.jar"
+        jumboMode="false"
+        revision="21.1.1"
+        sha1="1ef66f0fb4c6453f49e2644c50f3d6dd594bff10">
+        <dex dex="/Users/apple/Documents/ASworkspace/SmartNurse/build/intermediates/pre-dexed/debug/gifview-ba6866c1989eed5e22798fbe893d247b05d03ce3.jar" />
+    </item>
+    <item
+        jar="/Users/apple/Documents/ASworkspace/SmartNurse/libs/Sunflower.jar"
+        jumboMode="false"
+        revision="21.1.1"
+        sha1="ffeb054379e1352fdfcfa58e978259e7294e67f7">
+        <dex dex="/Users/apple/Documents/ASworkspace/SmartNurse/build/intermediates/pre-dexed/debug/Sunflower-2b5c45ebfbc640ef881a3355ba248c0c69ef9464.jar" />
+    </item>
+    <item
+        jar="/Users/apple/Documents/ASworkspace/SmartNurse/libs/jpush-sdk-release1.7.1.jar"
+        jumboMode="false"
+        revision="21.1.1"
+        sha1="2b1a6dfe5d987683bf006ba4a028ca12e4fe5906">
+        <dex dex="/Users/apple/Documents/ASworkspace/SmartNurse/build/intermediates/pre-dexed/debug/jpush-sdk-release1.7.1-53d025c88e7baa8dc86f0b9029ee3de28abd758c.jar" />
+    </item>
+    <item
+        jar="/Users/apple/Documents/ASworkspace/SmartNurse/build/intermediates/exploded-aar/SmartNurse/hellocharts-library/unspecified/classes.jar"
+        jumboMode="false"
+        revision="21.1.1"
+        sha1="47e8892fa038e2106e7531d374109c736b8c4577">
+        <dex dex="/Users/apple/Documents/ASworkspace/SmartNurse/build/intermediates/pre-dexed/debug/classes-92fe05c95ce57e3a975ce0af6d4cbad07e4a5d89.jar" />
+    </item>
+    <item
+        jar="/Users/apple/Documents/ASworkspace/SmartNurse/build/intermediates/exploded-aar/SmartNurse/GuestTouch/unspecified/classes.jar"
+        jumboMode="false"
+        revision="21.1.1"
+        sha1="81acab562e397cfaf63ff0cf919c4aa141d040d3">
+        <dex dex="/Users/apple/Documents/ASworkspace/SmartNurse/build/intermediates/pre-dexed/debug/classes-eae376714d2867c19581fa2c3aa6bebb7d2ab14b.jar" />
+    </item>
+    <item
+        jar="/Users/apple/Documents/ASworkspace/SmartNurse/libs/nineoldandroids-2.4.0-2.jar"
+        jumboMode="false"
+        revision="21.1.1"
+        sha1="59f19e43354d32de831379c23ce03bb259a4c2b7">
+        <dex dex="/Users/apple/Documents/ASworkspace/SmartNurse/build/intermediates/pre-dexed/debug/nineoldandroids-2.4.0-2-744a66f3a42b237758a55918de607673ac19f255.jar" />
+    </item>
+    <item
+        jar="/Users/apple/Documents/ASworkspace/SmartNurse/libs/Msc.jar"
+        jumboMode="false"
+        revision="21.1.1"
+        sha1="6cd400a3ba3e7438e3026edb4f231387d23297f3">
+        <dex dex="/Users/apple/Documents/ASworkspace/SmartNurse/build/intermediates/pre-dexed/debug/Msc-9fcd7c8baff0d5f27980610b30f233eb2b636327.jar" />
+    </item>
+    <item
+        jar="/Users/apple/Documents/ASworkspace/SmartNurse/libs/fastjson-1.1.36.jar"
+        jumboMode="false"
+        revision="21.1.1"
+        sha1="63a6becf28f9a3facdc54a350c93fb1b85893ac5">
+        <dex dex="/Users/apple/Documents/ASworkspace/SmartNurse/build/intermediates/pre-dexed/debug/fastjson-1.1.36-8c09314185c6fccab6c998dc7be840617dfc48d3.jar" />
+    </item>
+
+</items>

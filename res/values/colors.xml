@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+    <color name="menu_btn_green_normal">#65BA21</color>
+    <color name="menu_btn_green_press">#7ED321</color>
+    
+    
+    
+     <!-- 画面背景色 -->
+    <drawable name="layout_backgroud">#000000</drawable>
+    
+    <!-- 分割线背景色 -->
+    <drawable name="line_background">#161823</drawable>
+
+    <color name="white">#FFFFFF</color>
+    
+    <!-- 控件按下时显示的颜色 -->
+    <color name="list_backgroud_color">#2fb3cb</color>
+    <color name="title_color">#0f8ec5</color>
+    <color name="content_color">#737373</color>
+    <color name="gridview_press">#54666666</color>
+    
+    <!-- 监控页面 -->
+    
+    <!-- 主动报警背景色 -->
+	<color name="active_warn_color">#c54a23</color>
+	<color name="active_warn_color1">#ffc54a23</color>
+	<!-- 摔倒报警背景色 -->
+	<color name="fall_warn">#ffc78619</color>
+	<!-- 不在服务区背景色 -->
+	<color name="out_area_warn">#ff3b6397</color>
+	<!-- 已处理告警的背景色 -->
+	<color name="deal_warn_color">#ffa8a8a8</color>
+	<!-- 活动老人列表的标题背景色 -->
+	<color name="dynamic_title_color">#00ffffff</color>
+	<!-- 活动老人列表的标题字体色 -->
+	<color name="dynamic_text_color">#00c377</color>
+	<!-- 无告警时老人头像外环色 -->
+	<color name="photo_out_color">#ff00c377</color>
+	<!-- 有告警时老人头像外环色 -->
+	<color name="warn_out_color">#ffc54923</color>
+	<!-- 无告警时老人头像名字颜色 -->
+	<color name="tv_name_color">#ffa7c1d1</color>
+	<!-- 正常监控状态背景 -->
+	<color name="monitor_background_color">#33404d</color>
+
+	<!-- 用户详情页面 -->
+	
+	<!-- 返回文字颜色 -->
+	<color name="detail_back">#58b77e</color>
+	<!-- 用户信息item文字颜色 -->
+	<color name="detail_info_item">#beccd8</color>
+	<!-- 用户信息标题颜色 -->
+	<color name="detail_info_title">#a7c1bd</color>
+	<!-- 用户信息内容颜色 -->
+	<color name="detail_info_content">#f1f1f1</color>
+	<!-- 用户信息上方条状颜色 -->
+	<color name="detail_shadow">#bfc6b3</color>
+	<!-- 用户信息item背景颜色 -->
+	<color name="detail_info_background">#4d5a66</color>
+	<!-- 图表按钮文字颜色 -->
+	<color name="chart_btn_color">#f1f1f1</color>
+	<!-- 整体背景色 -->
+	<color name="detail_background">#33404d</color>
+	
+	<!-- 图表页面 -->
+	
+	<!-- 图例标题背景色 -->
+	<color name="chart_title_background">#526476</color>
+	<!-- 图例标题文字色 -->
+	<color name="chart_title_color">#58b77e</color>
+	<!-- 图例内容背景色 -->
+	<color name="chart_content_background">#425161</color>
+	<!-- 图例内容文字色 -->
+	<color name="chart_content_color">#f1f1f1</color>
+	<!-- 图例按钮可以用得颜色 -->
+	<color name="chart_btn_enable">#a4a4a4</color>
+	<!-- 图例按钮不可以用得颜色 -->
+	<color name="chart_btn_nonenable">#333333</color>
+	<!-- 图例刻度文字的颜色 -->
+	<color name="chart_scale_text">#ffffff</color>
+	<!-- 图例线提示文字的颜色，比如卡路里 -->
+	<color name="chart_hint_text">#ffffff</color>	
+</resources>

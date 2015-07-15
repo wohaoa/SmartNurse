@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fl_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF" >
+
+    <LinearLayout
+        android:id="@+id/layout_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <ListView
+            android:id="@+id/lv_warning"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="15dp"
+            android:divider="@null" >
+        </ListView>
+
+        <LinearLayout
+            android:id="@+id/layout_dynamic"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="20dp"
+            android:layout_weight="1.3"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/monitor_dynamic_title_height"
+                android:background="@color/dynamic_title_color"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="@dimen/monitor_dynamic_title_height"
+                    android:layout_height="@dimen/monitor_dynamic_title_height"
+                    android:src="@drawable/ic_building" />
+
+                <TextView
+                    android:id="@+id/tv_dynamic_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="13栋5区 共有35位老人在活动"
+                    android:textColor="@color/dynamic_text_color"
+                    android:textSize="@dimen/monitor_text_size" />
+            </LinearLayout>
+
+            <GridView
+                android:id="@+id/gv_dynamic"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="12dp"
+                android:layout_marginTop="12dp"
+                android:gravity="center"
+                android:listSelector="@drawable/gridview_press_selector"
+                android:numColumns="10"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="5dp" >
+            </GridView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_fullscreen"
+        android:layout_width="@dimen/monitor_fullscreen_width"
+        android:layout_height="@dimen/monitor_fullscreen_height"
+        android:layout_gravity="right|top"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/btn_fullscreen" />
+
+</FrameLayout><!-- From: file:/Users/apple/Documents/ASworkspace/SmartNurse/res/layout/fragment_monitor.xml -->

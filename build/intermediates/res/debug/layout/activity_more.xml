@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:layout_width="240dp"
+        android:layout_height="match_parent"
+        android:background="#eff5ea" >
+
+        <LinearLayout
+            android:id="@+id/line_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <com.magicare.smartnurse.view.CircleImageView
+                xmlns:myxmlns="http://schemas.android.com/apk/res/com.magicare.smartnurse"
+                android:id="@+id/iv_photo"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_nurse"
+                myxmlns:border_color="#DCE4D8"
+                myxmlns:border_width="5dp" />
+
+            <TextView
+                android:id="@+id/tv_nursename"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:text="神雕大侠"
+                android:textColor="#7a8274" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/mylist"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/line_top"
+            android:layout_marginTop="20dp"
+            android:divider="@null"
+            android:dividerHeight="0dp" >
+        </ListView>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/vPager"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#f8f9f6" >
+    </FrameLayout>
+
+</LinearLayout><!-- From: file:/Users/apple/Documents/ASworkspace/SmartNurse/res/layout/activity_more.xml -->

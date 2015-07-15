@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+   <RelativeLayout
+        android:id="@+id/rl_parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+      
+        <LinearLayout
+            android:id="@+id/ll_child_concern"
+            android:layout_width="640dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="12dp"
+            android:layout_marginTop="12dp"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/bg_care_children"
+            android:orientation="vertical" >
+       
+            <TextView
+                android:id="@+id/tv_child_concern"
+                android:layout_width="600dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="10dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="3dp"
+                android:autoLink="all"
+                android:text="天凉了，晚上加床被子，白天多穿点衣服，晚上加床被子，白天多穿点衣服"
+                android:textColor="#434343"
+                android:textSize="24dp" />
+		</LinearLayout>
+		
+        <LinearLayout
+            android:id="@+id/lv1_reply"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:layout_width="640dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/ll_child_concern"
+            android:background="@drawable/bg_care_reply"
+            android:orientation="vertical" >
+       
+            <TextView
+                android:id="@+id/tv_reply"
+                android:layout_width="600dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="3dp"
+                android:autoLink="all"
+                android:text="已按照要求为老人多添置衣物已按照要求为老人多添置衣物已按照要求为老人多添置衣物"
+                android:textColor="#434343"
+                android:textSize="24dp" />
+       </LinearLayout>  
+       
+       <LinearLayout
+           	android:visibility="gone"
+            android:id="@+id/lv2_reply"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:layout_width="480dp"
+            android:layout_height="200dp"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/ll_child_concern"
+            android:background="@drawable/bg_care_reply"
+            android:orientation="vertical" >   
+            
+            <ImageView
+                android:id="@+id/iv_reply"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/logo" />
+		</LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout><!-- From: file:/Users/apple/Documents/ASworkspace/SmartNurse/res/layout/concern_detail_item.xml -->
