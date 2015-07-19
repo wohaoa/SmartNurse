@@ -19,4 +19,4 @@
     android:duration="@android:integer/config_longAnimTime"
     android:fromYDelta="0"
     android:toYDelta="100%p" />
-<!-- From: file:/Users/apple/Documents/ASworkspace/SmartNurse/GuestTouch/res/anim/slide_out_to_bottom.xml --><!-- From: file:/Users/apple/Documents/ASworkspace/SmartNurse/build/intermediates/exploded-aar/SmartNurse/GuestTouch/unspecified/res/anim/slide_out_to_bottom.xml -->
+<!-- From: file:/D:/Dropbox/AndroidStudioProject/SmartNurse/GuestTouch/res/anim/slide_out_to_bottom.xml --><!-- From: file:/D:/Dropbox/AndroidStudioProject/SmartNurse/build/intermediates/exploded-aar/SmartNurse/GuestTouch/unspecified/res/anim/slide_out_to_bottom.xml -->

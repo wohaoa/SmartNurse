@@ -25,4 +25,4 @@
     android:layout_weight="1"
     android:src="@drawable/abc_ic_clear_mtrl_alpha"
     android:gravity="center"
-    android:visibility="gone"/><!-- From: file:/Users/apple/Documents/ASworkspace/SmartNurse/android-support-v7-appcompat/res/layout/notification_media_cancel_action.xml --><!-- From: file:/Users/apple/Documents/ASworkspace/SmartNurse/build/intermediates/exploded-aar/SmartNurse/android-support-v7-appcompat/unspecified/res/layout/notification_media_cancel_action.xml -->
+    android:visibility="gone"/><!-- From: file:/D:/Dropbox/AndroidStudioProject/SmartNurse/android-support-v7-appcompat/res/layout/notification_media_cancel_action.xml --><!-- From: file:/D:/Dropbox/AndroidStudioProject/SmartNurse/build/intermediates/exploded-aar/SmartNurse/android-support-v7-appcompat/unspecified/res/layout/notification_media_cancel_action.xml -->

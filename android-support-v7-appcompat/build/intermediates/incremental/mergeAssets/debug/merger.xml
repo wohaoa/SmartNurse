@@ -1,2 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<merger version="3"><dataSet config="main"><source path="/Users/apple/Documents/ASworkspace/SmartNurse/android-support-v7-appcompat/assets"/></dataSet><dataSet config="debug"><source path="/Users/apple/Documents/ASworkspace/SmartNurse/android-support-v7-appcompat/build-types/debug/assets"/></dataSet></merger>
+<merger version="3"><dataSet config="main"><source path="D:\Dropbox\AndroidStudioProject\SmartNurse\android-support-v7-appcompat\assets"/></dataSet><dataSet config="debug"><source path="D:\Dropbox\AndroidStudioProject\SmartNurse\android-support-v7-appcompat\build-types\debug\assets"/></dataSet></merger>

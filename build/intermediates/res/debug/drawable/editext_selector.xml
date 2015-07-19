@@ -9,4 +9,4 @@
     <item android:drawable="@drawable/bg_input_normal" android:state_focused="false"/>
     <item android:drawable="@drawable/bg_input_focus" android:state_focused="true"/>
 
-</selector><!-- From: file:/Users/apple/Documents/ASworkspace/SmartNurse/res/drawable/editext_selector.xml -->
+</selector><!-- From: file:/D:/Dropbox/AndroidStudioProject/SmartNurse/res/drawable/editext_selector.xml -->

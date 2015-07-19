@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
-    <!-- From: file:/Users/apple/Documents/ASworkspace/SmartNurse/build/intermediates/exploded-aar/SmartNurse/android-support-v7-appcompat/unspecified/res/values/values.xml -->
+    <!-- From: file:/D:/Dropbox/AndroidStudioProject/SmartNurse/build/intermediates/exploded-aar/SmartNurse/android-support-v7-appcompat/unspecified/res/values/values.xml -->
     <eat-comment/>
     <attr format="reference" name="drawerArrowStyle"/>
     <attr format="dimension" name="height"/>
@@ -19,11 +19,11 @@
     <color name="abc_search_url_text_selected">@android:color/black</color>
     <color name="accent_material_dark">@color/material_deep_teal_200</color>
     <color name="accent_material_light">@color/material_deep_teal_500</color>
-    <!-- From: file:/Users/apple/Documents/ASworkspace/SmartNurse/res/values/colors.xml -->
+    <!-- From: file:/D:/Dropbox/AndroidStudioProject/SmartNurse/res/values/colors.xml -->
     <eat-comment/>
     <color name="active_warn_color">#c54a23</color>
     <color name="active_warn_color1">#ffc54a23</color>
-    <!-- From: file:/Users/apple/Documents/ASworkspace/SmartNurse/build/intermediates/exploded-aar/SmartNurse/android-support-v7-appcompat/unspecified/res/values/values.xml -->
+    <!-- From: file:/D:/Dropbox/AndroidStudioProject/SmartNurse/build/intermediates/exploded-aar/SmartNurse/android-support-v7-appcompat/unspecified/res/values/values.xml -->
     <eat-comment/>
     <color name="background_floating_material_dark">#ff424242</color>
     <color name="background_floating_material_light">#ffeeeeee</color>
@@ -37,7 +37,7 @@
     <color name="bright_foreground_material_light">@android:color/black</color>
     <color name="button_material_dark">#ff5a595b</color>
     <color name="button_material_light">#ffd6d7d7</color>
-    <!-- From: file:/Users/apple/Documents/ASworkspace/SmartNurse/res/values/colors.xml -->
+    <!-- From: file:/D:/Dropbox/AndroidStudioProject/SmartNurse/res/values/colors.xml -->
     <eat-comment/>
     <color name="chart_btn_color">#f1f1f1</color>
     <color name="chart_btn_enable">#a4a4a4</color>
@@ -57,19 +57,19 @@
     <color name="detail_info_item">#beccd8</color>
     <color name="detail_info_title">#a7c1bd</color>
     <color name="detail_shadow">#bfc6b3</color>
-    <!-- From: file:/Users/apple/Documents/ASworkspace/SmartNurse/build/intermediates/exploded-aar/SmartNurse/android-support-v7-appcompat/unspecified/res/values/values.xml -->
+    <!-- From: file:/D:/Dropbox/AndroidStudioProject/SmartNurse/build/intermediates/exploded-aar/SmartNurse/android-support-v7-appcompat/unspecified/res/values/values.xml -->
     <eat-comment/>
     <color name="dim_foreground_disabled_material_dark">#80bebebe</color>
     <color name="dim_foreground_disabled_material_light">#80323232</color>
     <color name="dim_foreground_material_dark">#ffbebebe</color>
     <color name="dim_foreground_material_light">#ff323232</color>
-    <!-- From: file:/Users/apple/Documents/ASworkspace/SmartNurse/res/values/colors.xml -->
+    <!-- From: file:/D:/Dropbox/AndroidStudioProject/SmartNurse/res/values/colors.xml -->
     <eat-comment/>
     <color name="dynamic_text_color">#00c377</color>
     <color name="dynamic_title_color">#00ffffff</color>
     <color name="fall_warn">#ffc78619</color>
     <color name="gridview_press">#54666666</color>
-    <!-- From: file:/Users/apple/Documents/ASworkspace/SmartNurse/build/intermediates/exploded-aar/SmartNurse/android-support-v7-appcompat/unspecified/res/values/values.xml -->
+    <!-- From: file:/D:/Dropbox/AndroidStudioProject/SmartNurse/build/intermediates/exploded-aar/SmartNurse/android-support-v7-appcompat/unspecified/res/values/values.xml -->
     <eat-comment/>
     <color name="highlighted_text_material_dark">#6680cbc4</color>
     <color name="highlighted_text_material_light">#66009688</color>
@@ -77,24 +77,24 @@
     <color name="hint_foreground_material_light">@color/bright_foreground_disabled_material_light</color>
     <color name="link_text_material_dark">@color/material_deep_teal_200</color>
     <color name="link_text_material_light">@color/material_deep_teal_500</color>
-    <!-- From: file:/Users/apple/Documents/ASworkspace/SmartNurse/res/values/colors.xml -->
+    <!-- From: file:/D:/Dropbox/AndroidStudioProject/SmartNurse/res/values/colors.xml -->
     <eat-comment/>
     <color name="list_backgroud_color">#2fb3cb</color>
-    <!-- From: file:/Users/apple/Documents/ASworkspace/SmartNurse/build/intermediates/exploded-aar/SmartNurse/android-support-v7-appcompat/unspecified/res/values/values.xml -->
+    <!-- From: file:/D:/Dropbox/AndroidStudioProject/SmartNurse/build/intermediates/exploded-aar/SmartNurse/android-support-v7-appcompat/unspecified/res/values/values.xml -->
     <eat-comment/>
     <color name="material_blue_grey_800">#ff37474f</color>
     <color name="material_blue_grey_900">#ff263238</color>
     <color name="material_blue_grey_950">#ff21272b</color>
     <color name="material_deep_teal_200">#ff80cbc4</color>
     <color name="material_deep_teal_500">#ff009688</color>
-    <!-- From: file:/Users/apple/Documents/ASworkspace/SmartNurse/res/values/colors.xml -->
+    <!-- From: file:/D:/Dropbox/AndroidStudioProject/SmartNurse/res/values/colors.xml -->
     <eat-comment/>
     <color name="menu_btn_green_normal">#65BA21</color>
     <color name="menu_btn_green_press">#7ED321</color>
     <color name="monitor_background_color">#33404d</color>
     <color name="out_area_warn">#ff3b6397</color>
     <color name="photo_out_color">#ff00c377</color>
-    <!-- From: file:/Users/apple/Documents/ASworkspace/SmartNurse/build/intermediates/exploded-aar/SmartNurse/android-support-v7-appcompat/unspecified/res/values/values.xml -->
+    <!-- From: file:/D:/Dropbox/AndroidStudioProject/SmartNurse/build/intermediates/exploded-aar/SmartNurse/android-support-v7-appcompat/unspecified/res/values/values.xml -->
     <eat-comment/>
     <color name="primary_dark_material_dark">#ff000000</color>
     <color name="primary_dark_material_light">#ff757575</color>
@@ -114,7 +114,7 @@
     <color name="switch_thumb_disabled_material_light">#ffbdbdbd</color>
     <color name="switch_thumb_normal_material_dark">#ffbdbdbd</color>
     <color name="switch_thumb_normal_material_light">#fff1f1f1</color>
-    <!-- From: file:/Users/apple/Documents/ASworkspace/SmartNurse/res/values/colors.xml -->
+    <!-- From: file:/D:/Dropbox/AndroidStudioProject/SmartNurse/res/values/colors.xml -->
     <eat-comment/>
     <color name="title_color">#0f8ec5</color>
     <color name="tv_name_color">#ffa7c1d1</color>
@@ -149,7 +149,7 @@
     <declare-styleable name="Toolbar"><attr format="reference" name="titleTextAppearance"/><attr format="reference" name="subtitleTextAppearance"/><attr name="title"/><attr name="subtitle"/><attr name="android:gravity"/><attr format="dimension" name="titleMargins"/><attr format="dimension" name="titleMarginStart"/><attr format="dimension" name="titleMarginEnd"/><attr format="dimension" name="titleMarginTop"/><attr format="dimension" name="titleMarginBottom"/><attr name="contentInsetStart"/><attr name="contentInsetEnd"/><attr name="contentInsetLeft"/><attr name="contentInsetRight"/><attr format="dimension" name="maxButtonHeight"/><attr format="reference" name="collapseIcon"/><attr format="string" name="collapseContentDescription"/><attr name="popupTheme"/><attr format="reference" name="navigationIcon"/><attr format="string" name="navigationContentDescription"/><attr name="android:minHeight"/></declare-styleable>
     <declare-styleable name="View"><attr format="dimension" name="paddingStart"/><attr format="dimension" name="paddingEnd"/><attr name="android:focusable"/><attr format="reference" name="theme"/><attr name="android:theme"/><attr format="color" name="backgroundTint"/><attr name="backgroundTintMode"><enum name="src_over" value="3"/><enum name="src_in" value="5"/><enum name="src_atop" value="9"/><enum name="multiply" value="14"/><enum name="screen" value="15"/></attr></declare-styleable>
     <declare-styleable name="ViewStubCompat"><attr name="android:layout"/><attr name="android:inflatedId"/><attr name="android:id"/></declare-styleable>
-    <!-- From: file:/Users/apple/Documents/ASworkspace/SmartNurse/build/intermediates/exploded-aar/SmartNurse/android-support-v7-appcompat/unspecified/res/values/values.xml -->
+    <!-- From: file:/D:/Dropbox/AndroidStudioProject/SmartNurse/build/intermediates/exploded-aar/SmartNurse/android-support-v7-appcompat/unspecified/res/values/values.xml -->
     <eat-comment/>
     <dimen name="abc_action_bar_content_inset_material">16dp</dimen>
     <dimen name="abc_action_bar_default_height_material">56dp</dimen>
@@ -211,7 +211,7 @@
     <dimen name="abc_text_size_subtitle_material_toolbar">16dp</dimen>
     <dimen name="abc_text_size_title_material">20sp</dimen>
     <dimen name="abc_text_size_title_material_toolbar">20dp</dimen>
-    <!-- From: file:/Users/apple/Documents/ASworkspace/SmartNurse/res/values/dimens.xml -->
+    <!-- From: file:/D:/Dropbox/AndroidStudioProject/SmartNurse/res/values/dimens.xml -->
     <eat-comment/>
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
@@ -239,7 +239,7 @@
     <dimen name="dialog_feedback_title_textsize">20dp</dimen>
     <dimen name="dialog_feedback_widget_bottommargin">10dp</dimen>
     <dimen name="dialog_feedback_widget_topmargin">10dp</dimen>
-    <!-- From: file:/Users/apple/Documents/ASworkspace/SmartNurse/build/intermediates/exploded-aar/SmartNurse/android-support-v7-appcompat/unspecified/res/values/values.xml -->
+    <!-- From: file:/D:/Dropbox/AndroidStudioProject/SmartNurse/build/intermediates/exploded-aar/SmartNurse/android-support-v7-appcompat/unspecified/res/values/values.xml -->
     <eat-comment/>
     <item name="dialog_fixed_height_major" type="dimen">80%</item>
     <item name="dialog_fixed_height_minor" type="dimen">100%</item>
@@ -247,19 +247,19 @@
     <item name="dialog_fixed_width_minor" type="dimen">320dp</item>
     <item format="float" name="disabled_alpha_material_dark" type="dimen">0.30</item>
     <item format="float" name="disabled_alpha_material_light" type="dimen">0.26</item>
-    <!-- From: file:/Users/apple/Documents/ASworkspace/SmartNurse/build/intermediates/exploded-aar/SmartNurse/GuestTouch/unspecified/res/values/values.xml -->
+    <!-- From: file:/D:/Dropbox/AndroidStudioProject/SmartNurse/build/intermediates/exploded-aar/SmartNurse/GuestTouch/unspecified/res/values/values.xml -->
     <eat-comment/>
     <dimen name="header_footer_left_right_padding">24dp</dimen>
     <dimen name="header_footer_top_bottom_padding">12dp</dimen>
-    <!-- From: file:/Users/apple/Documents/ASworkspace/SmartNurse/res/values/dimens.xml -->
+    <!-- From: file:/D:/Dropbox/AndroidStudioProject/SmartNurse/res/values/dimens.xml -->
     <eat-comment/>
     <dimen name="health_LineChartView_height">250dp</dimen>
-    <!-- From: file:/Users/apple/Documents/ASworkspace/SmartNurse/build/intermediates/exploded-aar/SmartNurse/GuestTouch/unspecified/res/values/values.xml -->
+    <!-- From: file:/D:/Dropbox/AndroidStudioProject/SmartNurse/build/intermediates/exploded-aar/SmartNurse/GuestTouch/unspecified/res/values/values.xml -->
     <eat-comment/>
     <dimen name="indicator_corner_radius">12dp</dimen>
     <dimen name="indicator_internal_padding">4dp</dimen>
     <dimen name="indicator_right_padding">10dp</dimen>
-    <!-- From: file:/Users/apple/Documents/ASworkspace/SmartNurse/res/values/dimens.xml -->
+    <!-- From: file:/D:/Dropbox/AndroidStudioProject/SmartNurse/res/values/dimens.xml -->
     <eat-comment/>
     <dimen name="item_LinearLayout_height">50dp</dimen>
     <dimen name="item_LinearLayout_titleheight">45dp</dimen>
@@ -269,12 +269,12 @@
     <dimen name="monitor_fullscreen_height">43dp</dimen>
     <dimen name="monitor_fullscreen_width">43dp</dimen>
     <dimen name="monitor_text_size">20dp</dimen>
-    <!-- From: file:/Users/apple/Documents/ASworkspace/SmartNurse/build/intermediates/exploded-aar/SmartNurse/android-support-v7-appcompat/unspecified/res/values/values.xml -->
+    <!-- From: file:/D:/Dropbox/AndroidStudioProject/SmartNurse/build/intermediates/exploded-aar/SmartNurse/android-support-v7-appcompat/unspecified/res/values/values.xml -->
     <eat-comment/>
     <dimen name="notification_large_icon_height">64dp</dimen>
     <dimen name="notification_large_icon_width">64dp</dimen>
     <dimen name="notification_subtext_size">12dp</dimen>
-    <!-- From: file:/Users/apple/Documents/ASworkspace/SmartNurse/res/values/dimens.xml -->
+    <!-- From: file:/D:/Dropbox/AndroidStudioProject/SmartNurse/res/values/dimens.xml -->
     <eat-comment/>
     <dimen name="sleep_LineChartView_height">250dp</dimen>
     <dimen name="sleep_LineChartView_width">600dp</dimen>
@@ -325,40 +325,40 @@
     <dimen name="userdetail_tv_timelabl_marginLeft">40dp</dimen>
     <dimen name="userdetail_tv_timelabl_width">70dp</dimen>
     <dimen name="userdetail_view">465dp</dimen>
-    <!-- From: file:/Users/apple/Documents/ASworkspace/SmartNurse/res/values/strings.xml -->
+    <!-- From: file:/D:/Dropbox/AndroidStudioProject/SmartNurse/res/values/strings.xml -->
     <eat-comment/>
     <drawable name="about_normal">#4EC572</drawable>
     <drawable name="about_pressed">#349C53</drawable>
-    <!-- From: file:/Users/apple/Documents/ASworkspace/SmartNurse/res/values/colors.xml -->
+    <!-- From: file:/D:/Dropbox/AndroidStudioProject/SmartNurse/res/values/colors.xml -->
     <eat-comment/>
     <drawable name="layout_backgroud">#000000</drawable>
     <drawable name="line_background">#161823</drawable>
-    <!-- From: file:/Users/apple/Documents/ASworkspace/SmartNurse/build/intermediates/exploded-aar/SmartNurse/android-support-v7-appcompat/unspecified/res/values/values.xml -->
+    <!-- From: file:/D:/Dropbox/AndroidStudioProject/SmartNurse/build/intermediates/exploded-aar/SmartNurse/android-support-v7-appcompat/unspecified/res/values/values.xml -->
     <eat-comment/>
     <drawable name="notification_template_icon_bg">#3333B5E5</drawable>
     <item name="action_bar_activity_content" type="id"/>
     <item name="action_bar_spinner" type="id"/>
     <item name="action_menu_divider" type="id"/>
     <item name="action_menu_presenter" type="id"/>
-    <!-- From: file:/Users/apple/Documents/ASworkspace/SmartNurse/build/intermediates/exploded-aar/SmartNurse/GuestTouch/unspecified/res/values/values.xml -->
+    <!-- From: file:/D:/Dropbox/AndroidStudioProject/SmartNurse/build/intermediates/exploded-aar/SmartNurse/GuestTouch/unspecified/res/values/values.xml -->
     <eat-comment/>
     <item name="gridview" type="id"/>
-    <!-- From: file:/Users/apple/Documents/ASworkspace/SmartNurse/build/intermediates/exploded-aar/SmartNurse/android-support-v7-appcompat/unspecified/res/values/values.xml -->
+    <!-- From: file:/D:/Dropbox/AndroidStudioProject/SmartNurse/build/intermediates/exploded-aar/SmartNurse/android-support-v7-appcompat/unspecified/res/values/values.xml -->
     <eat-comment/>
     <item name="home" type="id"/>
     <item name="progress_circular" type="id"/>
     <item name="progress_horizontal" type="id"/>
-    <!-- From: file:/Users/apple/Documents/ASworkspace/SmartNurse/build/intermediates/exploded-aar/SmartNurse/GuestTouch/unspecified/res/values/values.xml -->
+    <!-- From: file:/D:/Dropbox/AndroidStudioProject/SmartNurse/build/intermediates/exploded-aar/SmartNurse/GuestTouch/unspecified/res/values/values.xml -->
     <eat-comment/>
     <item name="scrollview" type="id"/>
-    <!-- From: file:/Users/apple/Documents/ASworkspace/SmartNurse/build/intermediates/exploded-aar/SmartNurse/android-support-v7-appcompat/unspecified/res/values/values.xml -->
+    <!-- From: file:/D:/Dropbox/AndroidStudioProject/SmartNurse/build/intermediates/exploded-aar/SmartNurse/android-support-v7-appcompat/unspecified/res/values/values.xml -->
     <eat-comment/>
     <item name="split_action_bar" type="id"/>
     <item name="up" type="id"/>
-    <!-- From: file:/Users/apple/Documents/ASworkspace/SmartNurse/build/intermediates/exploded-aar/SmartNurse/GuestTouch/unspecified/res/values/values.xml -->
+    <!-- From: file:/D:/Dropbox/AndroidStudioProject/SmartNurse/build/intermediates/exploded-aar/SmartNurse/GuestTouch/unspecified/res/values/values.xml -->
     <eat-comment/>
     <item name="webview" type="id"/>
-    <!-- From: file:/Users/apple/Documents/ASworkspace/SmartNurse/build/intermediates/exploded-aar/SmartNurse/android-support-v7-appcompat/unspecified/res/values/values.xml -->
+    <!-- From: file:/D:/Dropbox/AndroidStudioProject/SmartNurse/build/intermediates/exploded-aar/SmartNurse/android-support-v7-appcompat/unspecified/res/values/values.xml -->
     <eat-comment/>
     <integer name="abc_config_activityDefaultDur">220</integer>
     <integer name="abc_config_activityShortDur">150</integer>
@@ -382,7 +382,7 @@
     <string name="abc_shareactionprovider_share_with">Share with</string>
     <string name="abc_shareactionprovider_share_with_application">Share with %s</string>
     <string name="abc_toolbar_collapse_description">Collapse</string>
-    <!-- From: file:/Users/apple/Documents/ASworkspace/SmartNurse/res/values/strings.xml -->
+    <!-- From: file:/D:/Dropbox/AndroidStudioProject/SmartNurse/res/values/strings.xml -->
     <eat-comment/>
     <string name="action_settings">Settings</string>
     <string name="app_name">SmartNurse</string>
@@ -403,7 +403,7 @@
     <string name="loadOk">确定</string>
     <string name="loadingMessage">正在下载新的版本，请稍候。。。</string>
     <string name="loadingTitle">温馨提示:</string>
-    <!-- From: file:/Users/apple/Documents/ASworkspace/SmartNurse/build/intermediates/exploded-aar/SmartNurse/GuestTouch/unspecified/res/values/values.xml -->
+    <!-- From: file:/D:/Dropbox/AndroidStudioProject/SmartNurse/build/intermediates/exploded-aar/SmartNurse/GuestTouch/unspecified/res/values/values.xml -->
     <eat-comment/>
     <string name="pull_to_refresh_from_bottom_pull_label">@string/pull_to_refresh_pull_label</string>
     <string name="pull_to_refresh_from_bottom_refreshing_label">@string/pull_to_refresh_refreshing_label</string>
@@ -411,10 +411,10 @@
     <string name="pull_to_refresh_pull_label">Pull to refresh…</string>
     <string name="pull_to_refresh_refreshing_label">Loading…</string>
     <string name="pull_to_refresh_release_label">Release to refresh…</string>
-    <!-- From: file:/Users/apple/Documents/ASworkspace/SmartNurse/build/intermediates/exploded-aar/SmartNurse/android-support-v7-appcompat/unspecified/res/values/values.xml -->
+    <!-- From: file:/D:/Dropbox/AndroidStudioProject/SmartNurse/build/intermediates/exploded-aar/SmartNurse/android-support-v7-appcompat/unspecified/res/values/values.xml -->
     <eat-comment/>
     <string name="status_bar_notification_info_overflow">999+</string>
-    <!-- From: file:/Users/apple/Documents/ASworkspace/SmartNurse/res/values/strings.xml -->
+    <!-- From: file:/D:/Dropbox/AndroidStudioProject/SmartNurse/res/values/strings.xml -->
     <eat-comment/>
     <string name="superman_cancel">取 消</string>
     <string name="superman_content">让我把你的应用变的能听会说吧！</string>
@@ -422,13 +422,13 @@
     <string name="superman_title">来 吧 !</string>
     <string name="verisonTitle">温馨提示:</string>
     <string name="versionMessage">有新版本，请升级</string>
-    <!-- From: file:/Users/apple/Documents/ASworkspace/SmartNurse/build/intermediates/exploded-aar/SmartNurse/android-support-v7-appcompat/unspecified/res/values/values.xml -->
+    <!-- From: file:/D:/Dropbox/AndroidStudioProject/SmartNurse/build/intermediates/exploded-aar/SmartNurse/android-support-v7-appcompat/unspecified/res/values/values.xml -->
     <eat-comment/>
     <style name="AlertDialog.AppCompat" parent="Base.AlertDialog.AppCompat"/>
     <style name="AlertDialog.AppCompat.Light" parent="Base.AlertDialog.AppCompat.Light"/>
     <style name="Animation.AppCompat.Dialog" parent="Base.Animation.AppCompat.Dialog"/>
     <style name="Animation.AppCompat.DropDownUp" parent="Base.Animation.AppCompat.DropDownUp"/>
-    <!-- From: file:/Users/apple/Documents/ASworkspace/SmartNurse/res/values/styles.xml -->
+    <!-- From: file:/D:/Dropbox/AndroidStudioProject/SmartNurse/res/values/styles.xml -->
     <eat-comment/>
     <style name="AppBaseTheme" parent="Theme.AppCompat.Light">
         <!--
@@ -443,7 +443,7 @@
     <style name="AppTheme" parent="AppBaseTheme">
         <!-- All customizations that are NOT specific to a particular API-level can go here. -->
     </style>
-    <!-- From: file:/Users/apple/Documents/ASworkspace/SmartNurse/build/intermediates/exploded-aar/SmartNurse/android-support-v7-appcompat/unspecified/res/values/values.xml -->
+    <!-- From: file:/D:/Dropbox/AndroidStudioProject/SmartNurse/build/intermediates/exploded-aar/SmartNurse/android-support-v7-appcompat/unspecified/res/values/values.xml -->
     <eat-comment/>
     <style name="Base.AlertDialog.AppCompat" parent="android:Widget">
         <item name="android:layout">@layout/abc_alert_dialog_material</item>
@@ -1359,7 +1359,7 @@
         <item name="android:scaleType">center</item>
         <item name="android:background">?attr/selectableItemBackground</item>
     </style>
-    <!-- From: file:/Users/apple/Documents/ASworkspace/SmartNurse/res/values/styles.xml -->
+    <!-- From: file:/D:/Dropbox/AndroidStudioProject/SmartNurse/res/values/styles.xml -->
     <eat-comment/>
     <style name="MyDialog" parent="@android:style/Theme.Dialog">
         <item name="android:windowFrame">@null</item>
@@ -1379,7 +1379,7 @@
         <item name="android:background">@android:color/transparent</item>
         <item name="android:windowBackground">@android:color/transparent</item>
     </style>
-    <!-- From: file:/Users/apple/Documents/ASworkspace/SmartNurse/build/intermediates/exploded-aar/SmartNurse/android-support-v7-appcompat/unspecified/res/values/values.xml -->
+    <!-- From: file:/D:/Dropbox/AndroidStudioProject/SmartNurse/build/intermediates/exploded-aar/SmartNurse/android-support-v7-appcompat/unspecified/res/values/values.xml -->
     <eat-comment/>
     <style name="Platform.AppCompat" parent="android:Theme">
         <item name="android:windowNoTitle">true</item>
@@ -1707,7 +1707,7 @@
     <style name="Widget.AppCompat.TextView.SpinnerItem" parent="Base.Widget.AppCompat.TextView.SpinnerItem"/>
     <style name="Widget.AppCompat.Toolbar" parent="Base.Widget.AppCompat.Toolbar"/>
     <style name="Widget.AppCompat.Toolbar.Button.Navigation" parent="RtlOverlay.Widget.AppCompat.Toolbar.Button.Navigation"/>
-    <!-- From: file:/Users/apple/Documents/ASworkspace/SmartNurse/res/values/styles.xml -->
+    <!-- From: file:/D:/Dropbox/AndroidStudioProject/SmartNurse/res/values/styles.xml -->
     <eat-comment/>
     <style name="adapter_dealwith_layout_user">
         <item name="android:layout_height">match_parent</item>

@@ -22,4 +22,4 @@
     <item android:id="@android:id/progress"
         android:drawable="@drawable/abc_btn_rating_star_on_mtrl_alpha" />
 </layer-list>
-<!-- From: file:/Users/apple/Documents/ASworkspace/SmartNurse/android-support-v7-appcompat/res/drawable/abc_ratingbar_full_material.xml --><!-- From: file:/Users/apple/Documents/ASworkspace/SmartNurse/build/intermediates/exploded-aar/SmartNurse/android-support-v7-appcompat/unspecified/res/drawable/abc_ratingbar_full_material.xml -->
+<!-- From: file:/D:/Dropbox/AndroidStudioProject/SmartNurse/android-support-v7-appcompat/res/drawable/abc_ratingbar_full_material.xml --><!-- From: file:/D:/Dropbox/AndroidStudioProject/SmartNurse/build/intermediates/exploded-aar/SmartNurse/android-support-v7-appcompat/unspecified/res/drawable/abc_ratingbar_full_material.xml -->

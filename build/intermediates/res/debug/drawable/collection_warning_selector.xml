@@ -4,4 +4,4 @@
     <item android:drawable="@drawable/collection_warning_bg" android:state_hovered="false"/>
     <item android:drawable="@drawable/btn_selected_tv" android:state_hovered="true"/>
 
-</selector><!-- From: file:/Users/apple/Documents/ASworkspace/SmartNurse/res/drawable/collection_warning_selector.xml -->
+</selector><!-- From: file:/D:/Dropbox/AndroidStudioProject/SmartNurse/res/drawable/collection_warning_selector.xml -->

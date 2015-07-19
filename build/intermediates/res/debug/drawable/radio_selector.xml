@@ -4,4 +4,4 @@
     <item android:drawable="@drawable/btn_radio_unselected" android:state_checked="false"/>
     <item android:drawable="@drawable/btn_radio_selected" android:state_checked="true"/>
 
-</selector><!-- From: file:/Users/apple/Documents/ASworkspace/SmartNurse/res/drawable/radio_selector.xml -->
+</selector><!-- From: file:/D:/Dropbox/AndroidStudioProject/SmartNurse/res/drawable/radio_selector.xml -->

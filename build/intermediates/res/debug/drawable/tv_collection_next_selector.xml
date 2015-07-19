@@ -4,4 +4,4 @@
     <item android:drawable="@drawable/btn_right_selected" android:state_hovered="true"/>
     <item android:drawable="@drawable/btn_right_normal" android:state_hovered="false"/>
 
-</selector><!-- From: file:/Users/apple/Documents/ASworkspace/SmartNurse/res/drawable/tv_collection_next_selector.xml -->
+</selector><!-- From: file:/D:/Dropbox/AndroidStudioProject/SmartNurse/res/drawable/tv_collection_next_selector.xml -->

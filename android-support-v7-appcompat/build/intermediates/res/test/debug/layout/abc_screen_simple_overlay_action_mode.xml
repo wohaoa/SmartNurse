@@ -36,4 +36,4 @@ enabled.
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
-</android.support.v7.internal.widget.FitWindowsFrameLayout><!-- From: file:/Users/apple/Documents/ASworkspace/SmartNurse/android-support-v7-appcompat/res/layout/abc_screen_simple_overlay_action_mode.xml --><!-- From: file:/Users/apple/Documents/ASworkspace/SmartNurse/android-support-v7-appcompat/build/intermediates/bundles/debug/res/layout/abc_screen_simple_overlay_action_mode.xml -->
+</android.support.v7.internal.widget.FitWindowsFrameLayout><!-- From: file:/D:/Dropbox/AndroidStudioProject/SmartNurse/android-support-v7-appcompat/res/layout/abc_screen_simple_overlay_action_mode.xml --><!-- From: file:/D:/Dropbox/AndroidStudioProject/SmartNurse/android-support-v7-appcompat/build/intermediates/bundles/debug/res/layout/abc_screen_simple_overlay_action_mode.xml -->

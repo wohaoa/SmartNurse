@@ -9,4 +9,4 @@
     <item android:drawable="@color/menu_btn_green_normal" android:state_checked="false"/>
     <item android:drawable="@color/menu_btn_green_press" android:state_checked="true"/>
 
-</selector><!-- From: file:/Users/apple/Documents/ASworkspace/SmartNurse/res/drawable/menu_btn_selector.xml -->
+</selector><!-- From: file:/D:/Dropbox/AndroidStudioProject/SmartNurse/res/drawable/menu_btn_selector.xml -->

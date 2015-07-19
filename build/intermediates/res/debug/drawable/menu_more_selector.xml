@@ -9,4 +9,4 @@
     <item android:drawable="@drawable/ic_more_white" android:state_checked="true"></item>
     <item android:drawable="@drawable/ic_more_green" android:state_checked="false"></item>
 
-</selector><!-- From: file:/Users/apple/Documents/ASworkspace/SmartNurse/res/drawable/menu_more_selector.xml -->
+</selector><!-- From: file:/D:/Dropbox/AndroidStudioProject/SmartNurse/res/drawable/menu_more_selector.xml -->

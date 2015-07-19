@@ -4,4 +4,4 @@
     <item android:drawable="@drawable/btn_normal_tv" android:state_pressed="false"/>
     <item android:drawable="@drawable/btn_selected_tv" android:state_pressed="true"/>
 
-</selector><!-- From: file:/Users/apple/Documents/ASworkspace/SmartNurse/res/drawable/collection_more_selector.xml -->
+</selector><!-- From: file:/D:/Dropbox/AndroidStudioProject/SmartNurse/res/drawable/collection_more_selector.xml -->

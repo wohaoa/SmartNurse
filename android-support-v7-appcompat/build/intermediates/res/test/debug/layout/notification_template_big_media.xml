@@ -58,4 +58,4 @@
         android:id="@+id/action_divider"
         android:background="?android:attr/dividerHorizontal" />
 </RelativeLayout>
-<!-- From: file:/Users/apple/Documents/ASworkspace/SmartNurse/android-support-v7-appcompat/res/layout/notification_template_big_media.xml --><!-- From: file:/Users/apple/Documents/ASworkspace/SmartNurse/android-support-v7-appcompat/build/intermediates/bundles/debug/res/layout/notification_template_big_media.xml -->
+<!-- From: file:/D:/Dropbox/AndroidStudioProject/SmartNurse/android-support-v7-appcompat/res/layout/notification_template_big_media.xml --><!-- From: file:/D:/Dropbox/AndroidStudioProject/SmartNurse/android-support-v7-appcompat/build/intermediates/bundles/debug/res/layout/notification_template_big_media.xml -->
