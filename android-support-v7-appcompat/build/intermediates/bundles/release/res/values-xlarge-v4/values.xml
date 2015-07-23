@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- From: file:/D:/Dropbox/AndroidStudioProject/SmartNurse/android-support-v7-appcompat/res/values-xlarge/bools.xml -->
+    <!-- From: file:/Users/lhw/AndroidStudioProjects/SmartNurse/android-support-v7-appcompat/res/values-xlarge/bools.xml -->
     <eat-comment/>
     <bool name="abc_action_bar_expanded_action_views_exclusive">false</bool>
-    <!-- From: file:/D:/Dropbox/AndroidStudioProject/SmartNurse/android-support-v7-appcompat/res/values-xlarge/dimens.xml -->
+    <!-- From: file:/Users/lhw/AndroidStudioProjects/SmartNurse/android-support-v7-appcompat/res/values-xlarge/dimens.xml -->
     <eat-comment/>
     <dimen name="abc_search_view_text_min_width">192dip</dimen>
     <item name="dialog_fixed_height_major" type="dimen">60%</item>

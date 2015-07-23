@@ -1,2 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<merger version="3"><dataSet config="main"><source path="D:\Dropbox\AndroidStudioProject\SmartNurse\GuestTouch\assets"/></dataSet><dataSet config="debug"><source path="D:\Dropbox\AndroidStudioProject\SmartNurse\GuestTouch\build-types\debug\assets"/></dataSet></merger>
+<merger version="3"><dataSet config="main"><source path="/Users/lhw/AndroidStudioProjects/SmartNurse/GuestTouch/assets"/></dataSet><dataSet config="debug"><source path="/Users/lhw/AndroidStudioProjects/SmartNurse/GuestTouch/build-types/debug/assets"/></dataSet></merger>

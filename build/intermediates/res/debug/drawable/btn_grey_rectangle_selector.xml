@@ -3,4 +3,4 @@
     <item android:drawable="@drawable/btn_grey_rectangle_normal" android:state_enabled="true" android:state_pressed="false"/>
     <item android:drawable="@drawable/btn_grey_rectangle_pressed" android:state_enabled="true" android:state_pressed="true"/>
 </selector>
-<!-- From: file:/D:/Dropbox/AndroidStudioProject/SmartNurse/res/drawable/btn_grey_rectangle_selector.xml -->
+<!-- From: file:/Users/lhw/AndroidStudioProjects/SmartNurse/res/drawable/btn_grey_rectangle_selector.xml -->
