@@ -73,6 +73,7 @@ import com.magicare.smartnurse.view.ClearEditText.ClearDate;
  * 
  *         Function:采集
  */
+@SuppressWarnings("ALL")
 public class CollectFragment extends BleBaseFragment implements OnClickListener, CollectionListener, ClearDate {
 
 	private View mView;
@@ -866,6 +867,7 @@ public class CollectFragment extends BleBaseFragment implements OnClickListener,
 		}
 	}
 
+	@SuppressWarnings("ResourceType")
 	@Override
 	protected void analyseData(String data) {
 		LogUtil.info("smarhit", "返回的结果:" + data);
@@ -1026,7 +1028,7 @@ public class CollectFragment extends BleBaseFragment implements OnClickListener,
 						amin.stop();
 						iv_totalprocess.clearAnimation();
 					}
-					iv_totalprocess.setBackgroundResource(R.anim.collect_process_270_360);
+					iv_totalprocess.setBackgroundResource(R.anim.collect_process);
 					amin = (AnimationDrawable) iv_totalprocess.getBackground();
 					amin.start();
 					isStart = true;
@@ -1097,146 +1099,146 @@ public class CollectFragment extends BleBaseFragment implements OnClickListener,
 						&& Integer.parseInt(results[3]) == 0X00 && Integer.parseInt(results[4]) == 0X04) {
 					int order = Integer.parseInt(results[5]);
 					switch (order) {
-					case 0X01:// 连接蓝牙测试
-						// 设置校验码
-						mDelayHander.sendEmptyMessageDelayed(SUGAR_VERIFYCODE, DELAYTTIME);
-						break;
-					case 0X02:
-						int error1 = Integer.parseInt(results[6]);
-						int error2 = Integer.parseInt(results[7]);
-						if (error1 == 0X00 && error2 == 0X01) {
-							// E-1错误
-							PromptManager.showToast(mContext, false, "设备出现异常 E-1错误");
-						} else if (error1 == 0X00 && error2 == 0X02) {
-							// E-2错误
-							PromptManager.showToast(mContext, false, "设备出现异常 E-2错误");
-						} else if (error1 == 0X00 && error2 == 0X03) {
-							// E-3错误
-							PromptManager.showToast(mContext, false, "设备出现异常 E-3错误");
-						} else if (error1 == 0X01 && error2 == 0X01) {
-							// HI错误
-							PromptManager.showToast(mContext, false, "设备出现异常 HI错误");
-						} else if (error1 == 0X01 && error2 == 0X02) {
-							// LO错误
-							PromptManager.showToast(mContext, false, "设备出现异常 LO错误");
-						}
-						break;
-					case 0X03:// 滴血闪烁
-						PromptManager.showToast(mContext, false, "设备滴血闪烁！");
-						mDelayHander.sendEmptyMessageDelayed(SUGAR_DATA, DELAYTTIME);
-						// 获取数据
-						// write(BLEConstants.UUID_BLOODSUGAR_CHARACTERISTIC,
-						// BloodSugarDataUtil.getData());
-						break;
-					case 0X04:// 获取数据
-						// 关闭蓝牙通信
-						if (mBluetoothLeService != null) {
-							mBluetoothLeService.scanLeDevice(false);
-							mBluetoothLeService.close();
-						}
-						float bloodsugar = (Float.parseFloat(results[12]) / 10);
-						tv_bloodsugar.setText(bloodsugar + "Mmol/L");
-
-						if (retestAmin != null) {
-							retestAmin.stop();
-							iv_bloodsugar_loading.clearAnimation();
-						}
-						iv_bloodsugar_defalut.setVisibility(View.VISIBLE);
-						iv_bloodsugar_loading.setVisibility(View.GONE);
-						iv_bloodsugar_defalut.setImageResource(R.drawable.ic_collect_done);
-						btn_bloodsugar.setText("重新采集");
-						isRetestPause = false;
-						if (isNewData) {
-							if (amin != null) {
-								amin.stop();
-								iv_totalprocess.clearAnimation();
+						case 0X01:// 连接蓝牙测试
+							// 设置校验码
+							mDelayHander.sendEmptyMessageDelayed(SUGAR_VERIFYCODE, DELAYTTIME);
+							break;
+						case 0X02:
+							int error1 = Integer.parseInt(results[6]);
+							int error2 = Integer.parseInt(results[7]);
+							if (error1 == 0X00 && error2 == 0X01) {
+								// E-1错误
+								PromptManager.showToast(mContext, false, "设备出现异常 E-1错误");
+							} else if (error1 == 0X00 && error2 == 0X02) {
+								// E-2错误
+								PromptManager.showToast(mContext, false, "设备出现异常 E-2错误");
+							} else if (error1 == 0X00 && error2 == 0X03) {
+								// E-3错误
+								PromptManager.showToast(mContext, false, "设备出现异常 E-3错误");
+							} else if (error1 == 0X01 && error2 == 0X01) {
+								// HI错误
+								PromptManager.showToast(mContext, false, "设备出现异常 HI错误");
+							} else if (error1 == 0X01 && error2 == 0X02) {
+								// LO错误
+								PromptManager.showToast(mContext, false, "设备出现异常 LO错误");
 							}
-							iv_totalprocess.setBackgroundResource(R.anim.collect_process_270_360);
-							amin = (AnimationDrawable) iv_totalprocess.getBackground();
-							amin.start();
-							isStart = true;
-
-							if (processDefalutStatus() == 0) {
-								bean = new HealthBean();
+							break;
+						case 0X03:// 滴血闪烁
+							PromptManager.showToast(mContext, false, "设备滴血闪烁！");
+							mDelayHander.sendEmptyMessageDelayed(SUGAR_DATA, DELAYTTIME);
+							// 获取数据
+							// write(BLEConstants.UUID_BLOODSUGAR_CHARACTERISTIC,
+							// BloodSugarDataUtil.getData());
+							break;
+						case 0X04:// 获取数据
+							// 关闭蓝牙通信
+							if (mBluetoothLeService != null) {
+								mBluetoothLeService.scanLeDevice(false);
+								mBluetoothLeService.close();
 							}
-							bean.setOld_id(userbean.getOld_id());
-							bean.setOld_sn(userbean.getOld_sn());
-							bean.setData_id(UUID.randomUUID().toString());
-							bean.setBlood_sugar(bloodsugar);
-							bean.setCollect_time(DateUtil.DateToString(new Date(), "yyyy-MM-dd HH:mm:ss"));
-							bean.setNurse_id(ConfigManager.getIntValue(mContext, ConfigManager.NURSE_ID));
-							bean.setNurse_name(ConfigManager.getStringValue(mContext, ConfigManager.NURSE_NAME));
-							healthBean = bean;
-							saveCollectData(bean, true);
+							float bloodsugar = (Float.parseFloat(results[12]) / 10);
+							tv_bloodsugar.setText(bloodsugar + "Mmol/L");
 
-							if (processDefalutStatus() != 3) {
-								// 重新开启蓝牙扫描，连接其他设备
-								mBluetoothLeService.scanLeDevice(BLEConstants.TYPE_BLOODSUGAR_DEVICE_NAME);
-								LogUtil.info("smarhit", "血糖仪数据传输结束，开启扫描寻找其他设备  CollectedDevice="
-										+ mBluetoothLeService.mCollectedDevice + " DeviceName=" + deviceName);
-								// 重开动画效果，此时按下停止键停止扫描
-								isStart = false;
-								tv_current_status.setText("设备正在连接...");
-								tv_start_txt.setText("停止");
+							if (retestAmin != null) {
+								retestAmin.stop();
+								iv_bloodsugar_loading.clearAnimation();
+							}
+							iv_bloodsugar_defalut.setVisibility(View.VISIBLE);
+							iv_bloodsugar_loading.setVisibility(View.GONE);
+							iv_bloodsugar_defalut.setImageResource(R.drawable.ic_collect_done);
+							btn_bloodsugar.setText("重新采集");
+							isRetestPause = false;
+							if (isNewData) {
 								if (amin != null) {
 									amin.stop();
 									iv_totalprocess.clearAnimation();
 								}
-								iv_totalprocess.setBackgroundResource(R.anim.collect_process);
+								iv_totalprocess.setBackgroundResource(R.anim.collect_process_270_360);
 								amin = (AnimationDrawable) iv_totalprocess.getBackground();
 								amin.start();
-								// 一分钟后无响应断开连接
-								mDelayHander.sendEmptyMessageDelayed(CLOSE_BLUETOOTH, 60 * 1000);
+								isStart = true;
+
+								if (processDefalutStatus() == 0) {
+									bean = new HealthBean();
+								}
+								bean.setOld_id(userbean.getOld_id());
+								bean.setOld_sn(userbean.getOld_sn());
+								bean.setData_id(UUID.randomUUID().toString());
+								bean.setBlood_sugar(bloodsugar);
+								bean.setCollect_time(DateUtil.DateToString(new Date(), "yyyy-MM-dd HH:mm:ss"));
+								bean.setNurse_id(ConfigManager.getIntValue(mContext, ConfigManager.NURSE_ID));
+								bean.setNurse_name(ConfigManager.getStringValue(mContext, ConfigManager.NURSE_NAME));
+								healthBean = bean;
+								saveCollectData(bean, true);
+
+								if (processDefalutStatus() != 3) {
+									// 重新开启蓝牙扫描，连接其他设备
+									mBluetoothLeService.scanLeDevice(BLEConstants.TYPE_BLOODSUGAR_DEVICE_NAME);
+									LogUtil.info("smarhit", "血糖仪数据传输结束，开启扫描寻找其他设备  CollectedDevice="
+											+ mBluetoothLeService.mCollectedDevice + " DeviceName=" + deviceName);
+									// 重开动画效果，此时按下停止键停止扫描
+									isStart = false;
+									tv_current_status.setText("设备正在连接...");
+									tv_start_txt.setText("停止");
+									if (amin != null) {
+										amin.stop();
+										iv_totalprocess.clearAnimation();
+									}
+									iv_totalprocess.setBackgroundResource(R.anim.collect_process);
+									amin = (AnimationDrawable) iv_totalprocess.getBackground();
+									amin.start();
+									// 一分钟后无响应断开连接
+									mDelayHander.sendEmptyMessageDelayed(CLOSE_BLUETOOTH, 60 * 1000);
+								} else {
+									processDefalutStatus();
+									healthBean = null;
+								}
+
 							} else {
-								processDefalutStatus();
-								healthBean = null;
+								if (healthBean != null) {
+									healthBean.setBlood_sugar(bloodsugar);
+									healthBean.setCollect_time(DateUtil.DateToString(new Date(), "yyyy-MM-dd HH:mm:ss"));
+									healthBean.setNurse_id(ConfigManager.getIntValue(mContext, ConfigManager.NURSE_ID));
+									healthBean.setNurse_name(ConfigManager.getStringValue(mContext,
+											ConfigManager.NURSE_NAME));
+									saveCollectData(healthBean, false);
+								}
+								tv_current_status.setText("血糖仪采集完成");
+								LogUtil.info("smarhit", "停止扫描  CollectedDevice=" + mBluetoothLeService.mCollectedDevice
+										+ " DeviceName=" + deviceName);
 							}
-
-						} else {
-							if (healthBean != null) {
-								healthBean.setBlood_sugar(bloodsugar);
-								healthBean.setCollect_time(DateUtil.DateToString(new Date(), "yyyy-MM-dd HH:mm:ss"));
-								healthBean.setNurse_id(ConfigManager.getIntValue(mContext, ConfigManager.NURSE_ID));
-								healthBean.setNurse_name(ConfigManager.getStringValue(mContext,
-										ConfigManager.NURSE_NAME));
-								saveCollectData(healthBean, false);
-							}
-							tv_current_status.setText("血糖仪采集完成");
-							LogUtil.info("smarhit", "停止扫描  CollectedDevice=" + mBluetoothLeService.mCollectedDevice
-									+ " DeviceName=" + deviceName);
-						}
-						break;
-					case 0X05:
-						// PromptManager.showToast(mContext, "获取历史数据");
-						break;
-					case 0X07:// 设置时间返回
-						// mDelayHander.sendEmptyMessageDelayed(SUGAR_DATA,
-						// DELAYTTIME);
-						break;
-					case 0X09:// 设置校验码返回
-						if (Integer.parseInt(results[6]) == 0X00) {
-							// PromptManager.showToast(getApplicationContext(),
-							// "校验码设置成功!");
-							// mDelayHander.sendEmptyMessageDelayed(SUGAR_TIME,
+							break;
+						case 0X05:
+							// PromptManager.showToast(mContext, "获取历史数据");
+							break;
+						case 0X07:// 设置时间返回
+							// mDelayHander.sendEmptyMessageDelayed(SUGAR_DATA,
 							// DELAYTTIME);
-							mDelayHander.sendEmptyMessageDelayed(SUGAR_DATA, DELAYTTIME);
-						} else {
-							// PromptManager.showToast(getApplicationContext(),
-							// "校验码设置失败!");
-						}
-						break;
-					case 0X0A:// 开始测试血糖返回
-						PromptManager.showToast(mContext, true, "设备开始测试血糖");
-						break;
-					case 0X0B:// 设备关机
-						PromptManager.showToast(mContext, true, "血糖仪设备已关机!");
+							break;
+						case 0X09:// 设置校验码返回
+							if (Integer.parseInt(results[6]) == 0X00) {
+								// PromptManager.showToast(getApplicationContext(),
+								// "校验码设置成功!");
+								// mDelayHander.sendEmptyMessageDelayed(SUGAR_TIME,
+								// DELAYTTIME);
+								mDelayHander.sendEmptyMessageDelayed(SUGAR_DATA, DELAYTTIME);
+							} else {
+								// PromptManager.showToast(getApplicationContext(),
+								// "校验码设置失败!");
+							}
+							break;
+						case 0X0A:// 开始测试血糖返回
+							PromptManager.showToast(mContext, true, "设备开始测试血糖");
+							break;
+						case 0X0B:// 设备关机
+							PromptManager.showToast(mContext, true, "血糖仪设备已关机!");
 
-						break;
-					case 0X0C:// 设备蓝牙
-						PromptManager.showToast(mContext, true, "血糖仪关闭设备蓝牙!");
-						break;
-					default:
-						break;
+							break;
+						case 0X0C:// 设备蓝牙
+							PromptManager.showToast(mContext, true, "血糖仪关闭设备蓝牙!");
+							break;
+						default:
+							break;
 					}
 				} else {
 					PromptManager.showToast(mContext, false, "设备发的错误命令");
