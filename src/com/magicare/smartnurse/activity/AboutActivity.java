@@ -27,7 +27,7 @@ import android.widget.ProgressBar;
 /**
  * 关于我们
  * 
- * @author rice
+ * @author rice 12433455
  * 
  */
 public class AboutActivity extends BaseActivity implements OnClickListener {
