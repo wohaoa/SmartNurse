@@ -4,4 +4,4 @@
     <item android:drawable="@drawable/btn_grey_oval_normal" android:state_enabled="true" android:state_pressed="false"/>
     <item android:drawable="@drawable/btn_grey_oval_pressed" android:state_enabled="true" android:state_pressed="true"/>
 
-</selector><!-- From: file:/D:/Dropbox/AndroidStudioProject/SmartNurse/res/drawable/collect_btn_retest_selector.xml -->
+</selector><!-- From: file:/Users/lhw/AndroidStudioProjects/SmartNurse/res/drawable/collect_btn_retest_selector.xml -->

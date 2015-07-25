@@ -27,4 +27,4 @@
     android:paddingRight="?attr/dialogPreferredPadding"
     android:checkMark="?android:attr/listChoiceIndicatorSingle"
     android:ellipsize="marquee" />
-<!-- From: file:/D:/Dropbox/AndroidStudioProject/SmartNurse/android-support-v7-appcompat/res/layout/select_dialog_singlechoice_material.xml --><!-- From: file:/D:/Dropbox/AndroidStudioProject/SmartNurse/build/intermediates/exploded-aar/SmartNurse/android-support-v7-appcompat/unspecified/res/layout/select_dialog_singlechoice_material.xml -->
+<!-- From: file:/Users/lhw/AndroidStudioProjects/SmartNurse/android-support-v7-appcompat/res/layout/select_dialog_singlechoice_material.xml --><!-- From: file:/Users/lhw/AndroidStudioProjects/SmartNurse/build/intermediates/exploded-aar/SmartNurse/android-support-v7-appcompat/unspecified/res/layout/select_dialog_singlechoice_material.xml -->
