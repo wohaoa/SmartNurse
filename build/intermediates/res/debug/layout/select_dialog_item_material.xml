@@ -31,4 +31,4 @@
     android:paddingLeft="?attr/listPreferredItemPaddingLeft"
     android:paddingRight="?attr/listPreferredItemPaddingRight"
     android:ellipsize="marquee" />
-<!-- From: file:/Users/lhw/AndroidStudioProjects/SmartNurse/android-support-v7-appcompat/res/layout/select_dialog_item_material.xml --><!-- From: file:/Users/lhw/AndroidStudioProjects/SmartNurse/build/intermediates/exploded-aar/SmartNurse/android-support-v7-appcompat/unspecified/res/layout/select_dialog_item_material.xml -->
+<!-- From: file:/D:/Git/SmartNurse/android-support-v7-appcompat/res/layout/select_dialog_item_material.xml --><!-- From: file:/D:/Git/SmartNurse/build/intermediates/exploded-aar/SmartNurse/android-support-v7-appcompat/unspecified/res/layout/select_dialog_item_material.xml -->

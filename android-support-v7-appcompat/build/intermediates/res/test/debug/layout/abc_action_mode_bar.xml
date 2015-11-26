@@ -23,4 +23,4 @@
         android:visibility="gone"
         android:theme="?attr/actionBarTheme"
         style="?attr/actionModeStyle"/>
-<!-- From: file:/Users/lhw/AndroidStudioProjects/SmartNurse/android-support-v7-appcompat/res/layout/abc_action_mode_bar.xml --><!-- From: file:/Users/lhw/AndroidStudioProjects/SmartNurse/android-support-v7-appcompat/build/intermediates/bundles/debug/res/layout/abc_action_mode_bar.xml -->
+<!-- From: file:/D:/Git/SmartNurse/android-support-v7-appcompat/res/layout/abc_action_mode_bar.xml --><!-- From: file:/D:/Git/SmartNurse/android-support-v7-appcompat/build/intermediates/bundles/debug/res/layout/abc_action_mode_bar.xml -->

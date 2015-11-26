@@ -4,4 +4,4 @@
     <item android:state_checked="true" android:color="#ffffff"></item>
     <item android:state_checked="false" android:color="#333333"></item>
 
-</selector><!-- From: file:/Users/lhw/AndroidStudioProjects/SmartNurse/res/drawable/selector_color.xml -->
+</selector><!-- From: file:/D:/Git/SmartNurse/res/drawable/selector_color.xml -->

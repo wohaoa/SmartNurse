@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- From: file:/Users/lhw/AndroidStudioProjects/SmartNurse/android-support-v7-appcompat/build/intermediates/bundles/debug/res/values-v18/values.xml -->
+    <!-- From: file:/D:/Git/SmartNurse/android-support-v7-appcompat/build/intermediates/bundles/debug/res/values-v18/values.xml -->
     <eat-comment/>
     <dimen name="abc_switch_padding">0px</dimen>
 </resources>

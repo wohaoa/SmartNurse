@@ -80,16 +80,16 @@
     </content>
     <orderEntry type="jdk" jdkName="Android API 19 Platform" jdkType="Android SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" exported="" name="nineoldandroids" level="project" />
     <orderEntry type="library" exported="" name="nineoldandroids-2.4.0-2" level="project" />
-    <orderEntry type="library" exported="" name="android-support-v4" level="project" />
-    <orderEntry type="library" exported="" name="Msc" level="project" />
-    <orderEntry type="library" exported="" name="gifview" level="project" />
     <orderEntry type="library" exported="" name="fastjson-1.1.36" level="project" />
-    <orderEntry type="library" exported="" name="Sunflower" level="project" />
+    <orderEntry type="library" exported="" name="android-support-v4" level="project" />
     <orderEntry type="library" exported="" name="jpush-sdk-release1.7.1" level="project" />
-    <orderEntry type="module" module-name="android-support-v7-appcompat" exported="" />
+    <orderEntry type="library" exported="" name="nineoldandroids" level="project" />
+    <orderEntry type="library" exported="" name="gifview" level="project" />
+    <orderEntry type="library" exported="" name="Msc" level="project" />
+    <orderEntry type="library" exported="" name="Sunflower" level="project" />
     <orderEntry type="module" module-name="hellocharts-library" exported="" />
+    <orderEntry type="module" module-name="android-support-v7-appcompat" exported="" />
     <orderEntry type="module" module-name="GuestTouch" exported="" />
   </component>
 </module>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- From: file:/Users/lhw/AndroidStudioProjects/SmartNurse/android-support-v7-appcompat/build/intermediates/bundles/debug/res/values-large-v4/values.xml -->
+    <!-- From: file:/D:/Git/SmartNurse/android-support-v7-appcompat/build/intermediates/bundles/debug/res/values-large-v4/values.xml -->
     <eat-comment/>
     <bool name="abc_action_bar_embed_tabs_pre_jb">true</bool>
     <bool name="abc_config_allowActionMenuItemTextWithIcon">true</bool>

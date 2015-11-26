@@ -15,4 +15,4 @@
         android:topLeftRadius="@dimen/indicator_corner_radius"
         android:topRightRadius="@dimen/indicator_corner_radius" />
 
-</shape><!-- From: file:/Users/lhw/AndroidStudioProjects/SmartNurse/GuestTouch/res/drawable/indicator_bg_bottom.xml --><!-- From: file:/Users/lhw/AndroidStudioProjects/SmartNurse/build/intermediates/exploded-aar/SmartNurse/GuestTouch/unspecified/res/drawable/indicator_bg_bottom.xml -->
+</shape><!-- From: file:/D:/Git/SmartNurse/GuestTouch/res/drawable/indicator_bg_bottom.xml --><!-- From: file:/D:/Git/SmartNurse/build/intermediates/exploded-aar/SmartNurse/GuestTouch/unspecified/res/drawable/indicator_bg_bottom.xml -->

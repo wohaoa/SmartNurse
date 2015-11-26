@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- From: file:/Users/lhw/AndroidStudioProjects/SmartNurse/res/values-sw720dp/colors.xml -->
+    <!-- From: file:/D:/Git/SmartNurse/res/values-sw720dp/colors.xml -->
     <eat-comment/>
     <color name="active_warn_color">#ff6838</color>
     <color name="active_warn_color1">#ffff6838</color>
@@ -36,7 +36,7 @@
     <color name="tv_name_color">#ff000000</color>
     <color name="warn_out_color">#ffff5722</color>
     <color name="white">#FFFFFF</color>
-    <!-- From: file:/Users/lhw/AndroidStudioProjects/SmartNurse/res/values-sw720dp/dimens.xml -->
+    <!-- From: file:/D:/Git/SmartNurse/res/values-sw720dp/dimens.xml -->
     <eat-comment/>
     <dimen name="activity_horizontal_margin">64dp</dimen>
     <dimen name="activity_userdetail_imageview">160dp</dimen>
@@ -122,11 +122,11 @@
     <dimen name="userdetail_tv_timelabl_marginLeft">20dp</dimen>
     <dimen name="userdetail_tv_timelabl_width">105dp</dimen>
     <dimen name="userdetail_view">610dp</dimen>
-    <!-- From: file:/Users/lhw/AndroidStudioProjects/SmartNurse/res/values-sw720dp/colors.xml -->
+    <!-- From: file:/D:/Git/SmartNurse/res/values-sw720dp/colors.xml -->
     <eat-comment/>
     <drawable name="layout_backgroud">#000000</drawable>
     <drawable name="line_background">#161823</drawable>
-    <!-- From: file:/Users/lhw/AndroidStudioProjects/SmartNurse/res/values-sw720dp/styles.xml -->
+    <!-- From: file:/D:/Git/SmartNurse/res/values-sw720dp/styles.xml -->
     <eat-comment/>
     <style name="AppBaseTheme" parent="Theme.AppCompat.Light">
         <!--

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- From: file:/Users/lhw/AndroidStudioProjects/SmartNurse/build/intermediates/exploded-aar/SmartNurse/android-support-v7-appcompat/unspecified/res/values-w600dp-v13/values.xml -->
+    <!-- From: file:/D:/Git/SmartNurse/build/intermediates/exploded-aar/SmartNurse/android-support-v7-appcompat/unspecified/res/values-w600dp-v13/values.xml -->
     <eat-comment/>
     <dimen name="abc_search_view_text_min_width">192dip</dimen>
     <integer name="abc_max_action_buttons">5</integer>

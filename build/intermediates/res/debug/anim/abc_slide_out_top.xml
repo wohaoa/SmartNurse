@@ -16,4 +16,4 @@
 <translate xmlns:android="http://schemas.android.com/apk/res/android"
            android:interpolator="@android:anim/accelerate_interpolator"
            android:fromYDelta="0" android:toYDelta="-50%p"
-           android:duration="@android:integer/config_mediumAnimTime"/><!-- From: file:/Users/lhw/AndroidStudioProjects/SmartNurse/android-support-v7-appcompat/res/anim/abc_slide_out_top.xml --><!-- From: file:/Users/lhw/AndroidStudioProjects/SmartNurse/build/intermediates/exploded-aar/SmartNurse/android-support-v7-appcompat/unspecified/res/anim/abc_slide_out_top.xml -->
+           android:duration="@android:integer/config_mediumAnimTime"/><!-- From: file:/D:/Git/SmartNurse/android-support-v7-appcompat/res/anim/abc_slide_out_top.xml --><!-- From: file:/D:/Git/SmartNurse/build/intermediates/exploded-aar/SmartNurse/android-support-v7-appcompat/unspecified/res/anim/abc_slide_out_top.xml -->

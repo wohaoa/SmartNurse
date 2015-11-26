@@ -4,4 +4,4 @@
     <item android:drawable="@drawable/btn_feedback_normal"  android:state_pressed="false"/>
     <item android:drawable="@drawable/btn_feedback_pressed" android:state_pressed="true"/>
 
-</selector><!-- From: file:/Users/lhw/AndroidStudioProjects/SmartNurse/res/drawable/btn_feedback_selector.xml -->
+</selector><!-- From: file:/D:/Git/SmartNurse/res/drawable/btn_feedback_selector.xml -->

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- From: file:/Users/lhw/AndroidStudioProjects/SmartNurse/android-support-v7-appcompat/build/intermediates/bundles/debug/res/values-am/values.xml -->
+    <!-- From: file:/D:/Git/SmartNurse/android-support-v7-appcompat/build/intermediates/bundles/debug/res/values-am/values.xml -->
     <eat-comment/>
     <string msgid="4600421777120114993" name="abc_action_bar_home_description">"ወደ መነሻ ይዳስሱ"</string>
     <string msgid="1594238315039666878" name="abc_action_bar_up_description">"ወደ ላይ ይዳስሱ"</string>

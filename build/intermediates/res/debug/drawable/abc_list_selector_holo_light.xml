@@ -26,4 +26,4 @@
     <item android:state_focused="true"                                                             android:drawable="@drawable/abc_list_focused_holo" />
 
 </selector>
-<!-- From: file:/Users/lhw/AndroidStudioProjects/SmartNurse/android-support-v7-appcompat/res/drawable/abc_list_selector_holo_light.xml --><!-- From: file:/Users/lhw/AndroidStudioProjects/SmartNurse/build/intermediates/exploded-aar/SmartNurse/android-support-v7-appcompat/unspecified/res/drawable/abc_list_selector_holo_light.xml -->
+<!-- From: file:/D:/Git/SmartNurse/android-support-v7-appcompat/res/drawable/abc_list_selector_holo_light.xml --><!-- From: file:/D:/Git/SmartNurse/build/intermediates/exploded-aar/SmartNurse/android-support-v7-appcompat/unspecified/res/drawable/abc_list_selector_holo_light.xml -->

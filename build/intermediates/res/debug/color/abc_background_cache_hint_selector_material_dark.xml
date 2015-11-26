@@ -17,4 +17,4 @@
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
     <item android:color="@color/background_material_dark" />
 </selector>
-<!-- From: file:/Users/lhw/AndroidStudioProjects/SmartNurse/android-support-v7-appcompat/res/color/abc_background_cache_hint_selector_material_dark.xml --><!-- From: file:/Users/lhw/AndroidStudioProjects/SmartNurse/build/intermediates/exploded-aar/SmartNurse/android-support-v7-appcompat/unspecified/res/color/abc_background_cache_hint_selector_material_dark.xml -->
+<!-- From: file:/D:/Git/SmartNurse/android-support-v7-appcompat/res/color/abc_background_cache_hint_selector_material_dark.xml --><!-- From: file:/D:/Git/SmartNurse/build/intermediates/exploded-aar/SmartNurse/android-support-v7-appcompat/unspecified/res/color/abc_background_cache_hint_selector_material_dark.xml -->

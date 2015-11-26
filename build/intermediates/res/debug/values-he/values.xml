@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- From: file:/Users/lhw/AndroidStudioProjects/SmartNurse/build/intermediates/exploded-aar/SmartNurse/GuestTouch/unspecified/res/values-he/values.xml -->
+    <!-- From: file:/D:/Git/SmartNurse/build/intermediates/exploded-aar/SmartNurse/GuestTouch/unspecified/res/values-he/values.xml -->
     <eat-comment/>
     <string name="pull_to_refresh_pull_label">משוך לרענון…</string>
     <string name="pull_to_refresh_refreshing_label">טוען…</string>
