@@ -1,29 +1,5 @@
 package com.magicare.smartnurse.activity;
 
-import java.io.File;
-import java.util.List;
-
-import com.alibaba.fastjson.JSON;
-import com.magicare.smartnurse.R;
-import com.magicare.smartnurse.bean.BaseBean;
-import com.magicare.smartnurse.bean.FeedBean;
-import com.magicare.smartnurse.bean.LoginEntity;
-import com.magicare.smartnurse.bean.PensionBean;
-import com.magicare.smartnurse.bean.RegionBean;
-import com.magicare.smartnurse.bean.UserBean;
-import com.magicare.smartnurse.database.dao.DBFeed;
-import com.magicare.smartnurse.database.dao.DBNurse;
-import com.magicare.smartnurse.database.dao.DBRegion;
-import com.magicare.smartnurse.database.dao.DBUser;
-import com.magicare.smartnurse.net.HttpClientUtil;
-import com.magicare.smartnurse.net.IOperationResult;
-import com.magicare.smartnurse.service.UpdateBitmapService;
-import com.magicare.smartnurse.utils.ConfigManager;
-import com.magicare.smartnurse.utils.Constants;
-import com.magicare.smartnurse.utils.FileUtils;
-import com.magicare.smartnurse.utils.LogUtil;
-import com.magicare.smartnurse.utils.PromptManager;
-
 import android.content.Intent;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager.NameNotFoundException;
@@ -35,6 +11,28 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+
+import com.alibaba.fastjson.JSON;
+import com.magicare.smartnurse.R;
+import com.magicare.smartnurse.bean.BaseBean;
+import com.magicare.smartnurse.bean.FeedBean;
+import com.magicare.smartnurse.bean.LoginEntity;
+import com.magicare.smartnurse.bean.RegionBean;
+import com.magicare.smartnurse.bean.UserBean;
+import com.magicare.smartnurse.database.dao.DBFeed;
+import com.magicare.smartnurse.database.dao.DBNurse;
+import com.magicare.smartnurse.database.dao.DBRegion;
+import com.magicare.smartnurse.database.dao.DBUser;
+import com.magicare.smartnurse.net.HttpClientUtil;
+import com.magicare.smartnurse.net.IOperationResult;
+import com.magicare.smartnurse.utils.ConfigManager;
+import com.magicare.smartnurse.utils.Constants;
+import com.magicare.smartnurse.utils.FileUtils;
+import com.magicare.smartnurse.utils.LogUtil;
+import com.magicare.smartnurse.utils.PromptManager;
+
+import java.io.File;
+import java.util.List;
 
 /**
  * 
